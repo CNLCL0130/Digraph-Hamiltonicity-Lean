@@ -1,0 +1,11 @@
+.lake/
+.verification/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.olean.hash
+*.ilean.hash
+*.zip
+.DS_Store
+Thumbs.db

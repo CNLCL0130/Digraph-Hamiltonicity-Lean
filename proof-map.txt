@@ -1,0 +1,183 @@
+原稿与 Lean 证明的对应
+
+对应原稿：manuscript/paper.tex。
+主入口：ChvatalErdos/Main.lean。
+整体验证结论、时间、源码与目标文件哈希以 verification/verification-status.json 为准；只有 full_paper 字段为 VERIFIED 才表示本轮完整验证成功。本文件说明命题和证明结构，不替代编译日志或验证状态。
+
+以下未特别注明的名字均位于 ChvatalErdos 命名空间。
+
+一、主结论
+
+thm:quantitative → main_quantitative
+  对所有整数 a≥2、k≥2、3∤k，f₂(a)≤r_k(a)+h_k(a)。Lean 中分别用 remainderBudget 和 connectionBudget 表示这两个预算。
+
+thm:asymptotic → main_asymptotic
+  存在统一正常数 C，对每个整数 a≥3，f₂(a)≤C·a·(log a)⁴/(log log a)²。
+
+cor:epsilon → main_epsilon
+  对每个实数 ε>0，存在统一于 a 的正常数 C，满足 f₂(a)≤C·a^(1+ε)，其中 a≥3。
+
+引言中的完全二部图下界 → main_linear_lower
+  对每个整数 a≥2，a≤f₂(a)。
+
+thm:pancyclic-construction → main_pancyclic_construction
+  对每个素数 q≥11，存在 4q²(q+1) 个顶点的 Hamilton 有向图 D，满足 κ(D)=q²(q+1)、α₂(D)≤8q²+4q−4，并且没有有向三圈。形式化结论还直接给出非泛圈性和 α₂(D)+1≤κ(D)。
+
+thm:pancyclic-obstruction → main_pancyclic_obstruction
+  不存在正常数 c，使所有满足 κ(D)≥c·α₂(D) 的 Hamilton 有向图都为泛圈图。
+
+f₂ 的存在性及最小性 → LeastBound.lean
+  sufficient_exists、f₂_sufficient、f₂_pos、f₂_le。f₂ 使用 Nat.find 定义为已证明存在的正充分连通度中最小的整数。
+
+Main.lean 同时检查 QuantitativeClaim、AsymptoticClaim、EpsilonClaim 与相应证明的对应关系。
+
+二、上界证明的结构
+
+有向图、2-圈独立性、强连通性与 Hamilton 圈：
+  Core.lean：Digraph、AlphaTwoLE、KStrong、Hamiltonian。
+
+最小入度、出度、删点与诱导图：
+  Connectivity.lean、InducedCore.lean。
+
+thm:carowei：
+  CaroWei.lean：caro_wei、caro_wei_density。证明采用随机顶点顺序。
+
+thm:pikhurko：
+  EvenCycleBound.lean：even_cycle_degree_bound。一般偶圈极值界作为本工程中的定理证明，不作为外部前提。
+  k=2 的情形：FourCycle.lean 的共同邻居、二步路径计数和二阶矩估计。
+  一般 k 的情形：DegreeCore.lean、BipartiteCut.lean、ChordedDensity.lean、ChordPathLemma.lean、RootedParent.lean、AncestorSplit.lean、LevelChordCycle.lean、LevelBounds.lean、PikhurkoDegree.lean、PikhurkoGrowth.lean。
+
+lem:remainder：
+  Remainder.lean：remainder_from_degree_bound。
+  ExtremalReduction.lean：maximal_remainder_bound。
+
+lem:forest：
+  Forest.lean：Forest.extension、Forest.path_cover、Forest.ends_card_le。
+
+lem:cutmatching：
+  CutMatching.lean：partial_hall、cut_matching。
+  InducedCutMatching.lean：用于删点后诱导子图的版本。
+
+独立及负相关 Bernoulli 下尾界：
+  Chernoff.lean、NegativeAssociation.lean：拉普拉斯变换、Markov 不等式、负相关闭包性质及指数估计。
+
+lem:part-selection：
+  MatchingSurvival.lean：FiniteProbability.PartSelection.matching_survival_tail 及存活边来自不同部分的定理。证明保留同一部分可能含多条原始匹配边的情形。
+
+有限随机选择、延迟暴露及完整停止历史：
+  FiniteProbability.lean、DeferredDecisions.lean、AdaptiveQueries.lean、ConditionalFreeze.lean。
+
+cl:neighbours：
+  GlobalNeighbours.lean：all_neighbour_failure_bound。
+  WeightedFailure.lean、Estimates.lean：度数加权求和及数值估计。
+
+cl:effective：
+  CycleEndpoints.lean：mixed_cycle_has_effective_pair。
+  RecordSeparations.lean：与实际辅助图分离相适配的版本。
+
+cl:records：
+  RecordAlgorithm.lean、RecordInvariants.lean、RecordWords.lean：Record.Separation.exists_compatible_record。
+
+cl:overflow：
+  AdaptiveOverflow.lean、FreshLaplace.lean、RecordOverflow.lean：Record.overflow_selection_budget。
+
+cl:stopped：
+  NormalRecords.lean、SmallSide.lean、LargeSide.lean、NormalStopBound.lean：Record.normal_stopping_bound。
+
+全部记录和颜色的联合概率：
+  RecordProbability.lean：Record.all_separations_probability。
+
+lem:selection：
+  Selection.lean：selection_exists。
+  CoreSelection.lean：core_selection_exists，将诱导图选择结论映回原有向图，并处理预先固定的端点集合。
+
+lem:linkage：
+  LinkageHall.lean、OrbitSegments.lean、LinkagePaths.lean、PathExpansion.lean。
+
+cl:initial：
+  InitialForest.lean：initial_forest。
+
+cl:merging 与逐轮减半：
+  HalfIndices.lean、HalvingMerge.lean、LayerMerge.lean、LayerIteration.lean、LayerCycle.lean。
+
+cl:extension 与最后插入：
+  CycleInsertion.lean、CycleInsertionLinks.lean、BidirectionalInsertion.lean。
+
+上述构造汇总为 Hamilton 圈：
+  ForestHamiltonian.lean、CycleCoreHamiltonian.lean、PackingHamiltonian.lean、ExtremalReduction.lean。
+
+渐近参数选择、取整及有限小参数：
+  LogBudgets.lean、RemainderLogBound.lean、AsymptoticLarge.lean、AsymptoticFinite.lean。
+
+ε 推论：
+  EpsilonBound.lean：scale_power_bound、epsilon_claim。
+
+完全二部图线性下界：
+  BipartiteExample.lean、LinearLowerBound.lean：unbalanced_counterexample、f₂_linear_lower。
+
+相关数值预算：
+  Budgets.lean、Estimates.lean、Selection.lean、NormalStopBound.lean、RecordProbability.lean。
+
+三、泛圈性反例的结构
+
+实际圈长、泛圈性及无有向三圈：
+  PancyclicDefinitions.lean：HasCycleLength、Pancyclic、TriangleFree、triangleFree_not_hasCycleLength_three、triangleFree_not_pancyclic。
+
+实际独立数及顶点连通度：
+  PancyclicDefinitions.lean：alpha₂、connectivity（别名 κ）、alphaTwoLE_iff_alpha₂_le、kStrong_iff_le_connectivity。
+  connectivity_eq_zero_of_order_le_one、connectivity_eq_zero_of_not_strong 给出原稿约定的零值情形。
+
+仿射平面关联结构与旗标计数：
+  AffineObstruction.lean：AffineObstruction.incidence、AffineObstruction.flag_card、AffineObstruction.line_card、AffineObstruction.no_four。
+
+lem:affine-base-properties：
+  AffineBaseProperties.lean：AffineObstruction.point_card、AffineObstruction.point_degree、AffineObstruction.line_degree、AffineObstruction.common_line_exists、AffineObstruction.unique_common_line、AffineObstruction.base_properties。
+  base_properties 汇总 |U|=q²、|W|=q(q+1)、点度数 q+1、线度数 q、不同两点唯一确定一条线、无四圈，以及旗标数 q²(q+1)。点邻居和线邻居的参数化分别通过 pointNeighborsEquiv、lineNeighborsEquiv 证明。
+
+lem:affine-triangle-free：
+  OrderedIncidence.lean：OrderedIncidence.triangle_impossible。
+  AffineObstruction.lean：AffineObstruction.graph_triangleFree。
+
+lem:affine-independence 的森林断言：
+  IncidenceForest.lean：OrderedIncidence.SelectedIncidence、OrderedIncidence.IsIncidenceForest、OrderedIncidence.independent_incidence_forest。
+  AffineForest.lean：AffineObstruction.graph_independent_forest。
+  IsIncidenceForest 排除所有长度 2k、k≥2 的单纯交替圈：两侧顶点序列均要求单射，每条相邻关联边及闭合关联边都必须属于所选旗标集合。独立集在 H_q 中的实际顶点被映回旗标，因此结论是原稿所说的关联子图为森林。
+
+lem:affine-independence 的独立数界：
+  OrderedIncidence.lean：OrderedIncidence.independent_card_bound。
+  AffineObstruction.lean：AffineObstruction.graph_alphaTwoLE。
+  数值界另采用直接注入计数：将独立集的旗标单射映入点与线的并集，并证明至少有一条线未被使用，从而得到 |I|≤|U|+|W|−1。森林断言与数值界均有证明；数值界的这条证明链不必再引用一般森林边数定理。
+
+四份图的循环连接：
+  FourPartObstruction.lean：fourPartDigraph、fourPart_hamiltonian、fourPart_kStrong、fourPart_not_kStrong_succ、fourPart_connectivity、fourPart_alpha、fourPart_triangleFree、fourPart_properties。
+  删除第零部分给出连通度上界，其余任意少于 m 个顶点的删除给出下界；因此 κ=m 是等式。
+
+完整的素数参数构造：
+  PancyclicObstruction.lean：pancyclicExample、pancyclic_construction。
+
+任意大的素数及比例估计：
+  ObstructionEstimates.lean：obstruction_prime_exists、obstruction_ratio_bound、obstruction_conjecture_bound。
+
+不存在固定线性泛圈性条件：
+  PancyclicObstruction.lean：pancyclic_counterexample、pancyclic_obstruction。
+
+Jackson–Ordaz 泛圈性猜想的具体反例：
+  PancyclicObstruction.lean：jackson_ordaz_pancyclic_counterexample。
+
+四、表示、等价重构与范围
+
+有限有向图采用 Fin n 为顶点编号。图允许同一对顶点间的两个相反弧，排除自环；AlphaTwoLE 禁止的是 2-圈，而不是所有单向弧。删点集合用无重复列表或有限集合表示。
+
+Hamiltonian 包含 n≥2、顶点枚举的单射与满射、全部相邻弧和闭合弧。HasCycleLength 同样要求实际的单射循环枚举；Pancyclic 要求 2 到 n 的每个长度。因此最终反例结论涉及实际有向圈。
+
+colourCount a=Nat.clog 2 a+1 使用以 2 为底的整数上取整对数，其余对数为 Real.log。remainderBudget 的被取整表达式在定理范围内为正，自然数上取整与原稿的上取整一致。connectionBudget=2¹⁶·(2k)²·a·colourCount(a)²，等于原稿的 h_k(a)=2¹⁸·k²·a·ℓ²。
+
+概率空间为文章实际使用的有限均匀乘积空间。停止后未暴露坐标的独立性由完整查询历史推导；适应性查询的下尾估计使用条件成功概率界。
+
+原稿调用 König 和 Menger 定理的步骤，形式化证明通过 Hall 定理证明所需匹配及集合连接结论，没有另行引入这两条一般定理作为假设。文献综述的历史定理和猜想不作为独立形式化目标。Caro–Wei 界与所需 Pikhurko 极值界的证明链位于本工程内。
+
+仿射平面的点采用有限编号与 ZMod q×ZMod q 的标准双射：编号 q·x+y 对应坐标 (x,y)。编号顺序因此与原稿使用整数代表元的字典序一致。OrderedIncidence 先对一般全序证明关联图性质，再应用于这一具体字典序构造。
+
+渐近部分采用同阶参数并证明对所有 a≥3 的统一不等式；不要求逐条声明原稿中每个 O、o、∼ 的中间表达式，也不追求最优常数。
+
+本工程对应当前 manuscript/paper.tex 快照，包含近线性 Hamilton 上界和最后一节的泛圈性反例。原始桌面源文件未被修改。原稿快照及形式化源码的最终哈希由 verification/verification-status.json 记录，编译与最终主定理的公理依赖检查由 scripts/verify.py 执行。

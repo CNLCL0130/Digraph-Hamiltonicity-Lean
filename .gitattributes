@@ -1,0 +1,2 @@
+# Preserve the exact bytes checked by SHA256SUMS on every platform.
+* -text
