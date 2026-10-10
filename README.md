@@ -159,8 +159,9 @@ check and does not run a new Lean build.
 The [GitHub Actions workflow](.github/workflows/lean.yml) is configured to
 check packaged hashes, compare source integrity, obtain the official
 dependency cache, compile all local proof modules, and audit the six main
-theorems. **It has not yet run on GitHub.** The completed local Lake build
-is recorded separately in
+theorems. Run results are available on the
+[Actions page](https://github.com/CNLCL0130/Digraph-Hamiltonicity-Lean/actions).
+The completed local Lake build is recorded separately in
 [publication-build-status.json](verification/publication-build-status.json)
 and [publication-build.log](verification/publication-build.log).
 
