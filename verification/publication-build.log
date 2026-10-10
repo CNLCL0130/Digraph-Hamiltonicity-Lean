@@ -1,0 +1,686 @@
+ℹ [1/34] Replayed ChvatalErdos.Core
+info: ChvatalErdos/Core.lean:282:0: 'ChvatalErdos.kStrong_cut_has_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Core.lean:283:0: 'ChvatalErdos.effective_exit_avoids_union' does not depend on any axioms
+info: ChvatalErdos/Core.lean:284:0: 'ChvatalErdos.effective_entrance_avoids_union' does not depend on any axioms
+info: ChvatalErdos/Core.lean:285:0: 'ChvatalErdos.independent_insert' does not depend on any axioms
+info: ChvatalErdos/Core.lean:286:0: 'ChvatalErdos.record_budget' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/Core.lean:287:0: 'ChvatalErdos.effective_pair_of_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1918/2048] Built ChvatalErdos.Paths (51s)
+warning: ChvatalErdos/Paths.lean:47:0: automatically included section variable(s) unused in theorem `ChvatalErdos.UPath.first_reverse`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/Paths.lean:50:0: automatically included section variable(s) unused in theorem `ChvatalErdos.UPath.last_reverse`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/Paths.lean:82:0: automatically included section variable(s) unused in theorem `ChvatalErdos.UPath.edge_reverse`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/Paths.lean:104:0: 'ChvatalErdos.UPath.join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Paths.lean:105:0: 'ChvatalErdos.UPath.edge_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1919/2048] Built ChvatalErdos.CycleEndpoints (50s)
+info: ChvatalErdos/CycleEndpoints.lean:122:0: 'ChvatalErdos.CycleEndpoints.connected' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/CycleEndpoints.lean:123:0: 'ChvatalErdos.CycleEndpoints.mixed_cycle_has_effective_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1920/2048] Built ChvatalErdos.NatPeriods (50s)
+info: ChvatalErdos/NatPeriods.lean:108:0: 'ChvatalErdos.least_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1921/2048] Built ChvatalErdos.FiniteProbability (56s)
+info: ChvatalErdos/FiniteProbability.lean:183:0: 'ChvatalErdos.FiniteProbability.markov' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FiniteProbability.lean:184:0: 'ChvatalErdos.FiniteProbability.expectation_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FiniteProbability.lean:185:0: 'ChvatalErdos.FiniteProbability.average_conditional_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1922/2048] Built Mathlib.Data.Fintype.Perm (56s)
+ℹ [1923/2048] Built ChvatalErdos.Connectivity (54s)
+info: ChvatalErdos/Connectivity.lean:169:0: 'ChvatalErdos.kStrong_outdegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Connectivity.lean:170:0: 'ChvatalErdos.kStrong_outside_indegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Connectivity.lean:171:0: 'ChvatalErdos.kStrong_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Connectivity.lean:172:0: 'ChvatalErdos.kStrongOn_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1924/2048] Built Mathlib.Combinatorics.Hall.Finite (54s)
+ℹ [1925/2048] Built ChvatalErdos.Budgets (54s)
+info: ChvatalErdos/Budgets.lean:43:0: 'ChvatalErdos.record_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Budgets.lean:44:0: 'ChvatalErdos.halving_rounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1926/2048] Built ChvatalErdos.OrbitSegments (54s)
+info: ChvatalErdos/OrbitSegments.lean:89:0: 'ChvatalErdos.firstVisit_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/OrbitSegments.lean:90:0: 'ChvatalErdos.firstVisit_interior_injective' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/OrbitSegments.lean:91:0: 'ChvatalErdos.firstVisit_terminal_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1927/2048] Built ChvatalErdos.OrderedIncidence (54s)
+✔ [1928/2048] Built Mathlib.Algebra.Field.ZMod (54s)
+ℹ [1929/2048] Built ChvatalErdos.ObstructionEstimates (54s)
+info: ChvatalErdos/ObstructionEstimates.lean:51:0: 'ChvatalErdos.obstruction_prime_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ObstructionEstimates.lean:52:0: 'ChvatalErdos.obstruction_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ObstructionEstimates.lean:53:0: 'ChvatalErdos.obstruction_conjecture_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1930/2048] Built ChvatalErdos.Estimates (69s)
+info: ChvatalErdos/Estimates.lean:233:0: 'ChvatalErdos.cubic_exp_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Estimates.lean:234:0: 'ChvatalErdos.all_records_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Estimates.lean:235:0: 'ChvatalErdos.neighbour_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Estimates.lean:236:0: 'ChvatalErdos.one_record_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1931/2048] Built ChvatalErdos.CyclePacking (43s)
+warning: ChvatalErdos/CyclePacking.lean:42:0: automatically included section variable(s) unused in theorem `ChvatalErdos.CyclePacking.mem_covered`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/CyclePacking.lean:93:0: 'ChvatalErdos.CyclePacking.maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1932/2048] Built ChvatalErdos.RootedParent (43s)
+info: ChvatalErdos/RootedParent.lean:103:0: 'ChvatalErdos.component_rooted_parent' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1933/2048] Built ChvatalErdos.DirectedPaths (43s)
+info: ChvatalErdos/DirectedPaths.lean:140:0: 'ChvatalErdos.path_of_reach' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/DirectedPaths.lean:141:0: 'ChvatalErdos.UPath.orient_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1934/2048] Built ChvatalErdos.Forest (44s)
+info: ChvatalErdos/Forest.lean:188:0: 'ChvatalErdos.Forest.merge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Forest.lean:189:0: 'ChvatalErdos.Forest.extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Forest.lean:190:0: 'ChvatalErdos.Forest.path_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Forest.lean:191:0: 'ChvatalErdos.Forest.ends_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1935/2048] Built ChvatalErdos.ColourFibres (47s)
+info: ChvatalErdos/ColourFibres.lean:78:0: 'ChvatalErdos.ColourFibres.index_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ColourFibres.lean:79:0: 'ChvatalErdos.ColourFibres.induced_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1936/2048] Built ChvatalErdos.HalfIndices (47s)
+info: ChvatalErdos/HalfIndices.lean:68:0: 'ChvatalErdos.HalfIndices.partition' depends on axioms: [propext, Quot.sound]
+ℹ [1937/2048] Built ChvatalErdos.PancyclicDefinitions (47s)
+info: ChvatalErdos/PancyclicDefinitions.lean:159:0: 'ChvatalErdos.triangleFree_not_hasCycleLength_three' depends on axioms: [propext]
+info: ChvatalErdos/PancyclicDefinitions.lean:160:0: 'ChvatalErdos.triangleFree_not_pancyclic' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/PancyclicDefinitions.lean:161:0: 'ChvatalErdos.alphaTwoLE_iff_alpha₂_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicDefinitions.lean:162:0: 'ChvatalErdos.alpha₂_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicDefinitions.lean:163:0: 'ChvatalErdos.kStrong_le_connectivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicDefinitions.lean:164:0: 'ChvatalErdos.connectivity_le_of_not_kStrong_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicDefinitions.lean:165:0: 'ChvatalErdos.connectivity_eq_zero_of_not_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicDefinitions.lean:166:0: 'ChvatalErdos.kStrong_iff_le_connectivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1938/2048] Built ChvatalErdos.IncidenceForest (47s)
+info: ChvatalErdos/IncidenceForest.lean:96:0: 'ChvatalErdos.OrderedIncidence.independent_incidence_forest' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1939/2048] Built ChvatalErdos.CutMatching (47s)
+info: ChvatalErdos/CutMatching.lean:157:0: 'ChvatalErdos.partial_hall' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CutMatching.lean:158:0: 'ChvatalErdos.cut_neighbour_deficiency' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CutMatching.lean:159:0: 'ChvatalErdos.cut_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1940/2048] Built ChvatalErdos.CaroWei (48s)
+info: ChvatalErdos/CaroWei.lean:198:0: 'ChvatalErdos.caro_wei_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CaroWei.lean:199:0: 'ChvatalErdos.caro_wei' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CaroWei.lean:200:0: 'ChvatalErdos.caro_wei_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1941/2048] Built ChvatalErdos.DeferredDecisions (50s)
+info: ChvatalErdos/DeferredDecisions.lean:226:0: 'ChvatalErdos.QueryTree.transcript_eq_iff_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/DeferredDecisions.lean:227:0: 'ChvatalErdos.stopped_conditional_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/DeferredDecisions.lean:228:0: 'ChvatalErdos.stopped_conditional_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/DeferredDecisions.lean:229:0: 'ChvatalErdos.fresh_coordinate_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1942/2048] Built ChvatalErdos.ConditionalUnion (50s)
+info: ChvatalErdos/ConditionalUnion.lean:28:0: 'ChvatalErdos.FiniteProbability.conditional_union_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1943/2048] Built ChvatalErdos.CycleChoice (50s)
+warning: ChvatalErdos/CycleChoice.lean:75:49: unused variable `hb`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ChvatalErdos/CycleChoice.lean:75:62: unused variable `hl`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/CycleChoice.lean:200:0: 'ChvatalErdos.CycleEndpoints.effective_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleChoice.lean:201:0: 'ChvatalErdos.CycleEndpoints.entrance_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleChoice.lean:202:0: 'ChvatalErdos.CycleEndpoints.exit_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleChoice.lean:203:0: 'ChvatalErdos.CycleEndpoints.retained_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1944/2048] Built ChvatalErdos.Chernoff (56s)
+info: ChvatalErdos/Chernoff.lean:104:0: 'ChvatalErdos.FiniteProbability.lower_tail_of_laplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Chernoff.lean:105:0: 'ChvatalErdos.FiniteProbability.independent_chernoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1945/2048] Built ChvatalErdos.LongestPath (44s)
+info: ChvatalErdos/LongestPath.lean:49:0: 'ChvatalErdos.longest_first_neighbours' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1946/2048] Built ChvatalErdos.PathPositions (47s)
+info: ChvatalErdos/PathPositions.lean:82:0: 'ChvatalErdos.UPath.neighbour_point_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PathPositions.lean:83:0: 'ChvatalErdos.UPath.cyclePrefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1947/2048] Built ChvatalErdos.Ancestors (47s)
+warning: ChvatalErdos/Ancestors.lean:62:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ChvatalErdos/Ancestors.lean:109:0: 'ChvatalErdos.RootedParent.ancestor_prefix' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/Ancestors.lean:110:0: 'ChvatalErdos.RootedParent.segment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1948/2048] Built ChvatalErdos.GraphEmbedding (47s)
+info: ChvatalErdos/GraphEmbedding.lean:87:0: 'ChvatalErdos.DPath.disjoint_mapGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/GraphEmbedding.lean:88:0: 'ChvatalErdos.UCycle.mapGraph' does not depend on any axioms
+⚠ [1949/2048] Built ChvatalErdos.PathArcSplit (47s)
+warning: ChvatalErdos/PathArcSplit.lean:9:0: automatically included section variable(s) unused in theorem `ChvatalErdos.DPath.no_arc_iff`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/PathArcSplit.lean:76:0: 'ChvatalErdos.DPath.arc_join_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PathArcSplit.lean:77:0: 'ChvatalErdos.DPath.split_at_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1950/2048] Built ChvatalErdos.CycleParts (47s)
+info: ChvatalErdos/CycleParts.lean:47:0: 'ChvatalErdos.UCycle.bipartite_part_many' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1951/2048] Built ChvatalErdos.InducedCutMatching (47s)
+info: ChvatalErdos/InducedCutMatching.lean:70:0: 'ChvatalErdos.induced_cut_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1952/2048] Built ChvatalErdos.LinkageHall (47s)
+info: ChvatalErdos/LinkageHall.lean:101:0: 'ChvatalErdos.linkage_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1953/2048] Built ChvatalErdos.FourPartObstruction (47s)
+info: ChvatalErdos/FourPartObstruction.lean:260:0: 'ChvatalErdos.fourPart_hamiltonian' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/FourPartObstruction.lean:261:0: 'ChvatalErdos.fourPart_kStrong' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FourPartObstruction.lean:262:0: 'ChvatalErdos.fourPart_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FourPartObstruction.lean:263:0: 'ChvatalErdos.fourPart_triangleFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FourPartObstruction.lean:264:0: 'ChvatalErdos.fourPart_not_kStrong_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FourPartObstruction.lean:265:0: 'ChvatalErdos.fourPart_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1954/2048] Built ChvatalErdos.AffineObstruction (48s)
+warning: ChvatalErdos/AffineObstruction.lean:117:11: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/AffineObstruction.lean:154:0: 'ChvatalErdos.AffineObstruction.graph_triangleFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/AffineObstruction.lean:155:0: 'ChvatalErdos.AffineObstruction.graph_alphaTwoLE' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1955/2048] Built ChvatalErdos.ComplementaryPaths (47s)
+warning: ChvatalErdos/ComplementaryPaths.lean:16:0: automatically included section variable(s) unused in theorem `ChvatalErdos.UCycle.rotated_injective`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/ComplementaryPaths.lean:29:0: automatically included section variable(s) unused in theorem `ChvatalErdos.UCycle.rotated_edge`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/ComplementaryPaths.lean:185:0: 'ChvatalErdos.UCycle.complementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ComplementaryPaths.lean:186:0: 'ChvatalErdos.UCycle.complementary_retained_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ComplementaryPaths.lean:187:0: 'ChvatalErdos.UCycle.complementary_retained_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ComplementaryPaths.lean:188:0: 'ChvatalErdos.UCycle.selected_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ComplementaryPaths.lean:189:0: 'ChvatalErdos.UCycle.selected_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1956/2048] Built ChvatalErdos.AdaptiveQueries (50s)
+warning: ChvatalErdos/AdaptiveQueries.lean:76:74: This simp argument is unused:
+  or_comm
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.mem_union, ̲Finset.mem_insert, ̲or_assoc, ̲or_left_comm,̵o̵r̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/AdaptiveQueries.lean:110:0: 'ChvatalErdos.QueryTree.ofAlgorithm_fresh' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/AdaptiveQueries.lean:111:0: 'ChvatalErdos.QueryTree.run_reproduce' depends on axioms: [propext]
+ℹ [1957/2048] Built ChvatalErdos.DegreeCore (50s)
+info: ChvatalErdos/DegreeCore.lean:68:0: 'ChvatalErdos.exists_degree_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1958/2048] Built ChvatalErdos.ResidueSplit (45s)
+warning: ChvatalErdos/ResidueSplit.lean:27:23: `Nat.dvd_sub'` has been deprecated: Use `Nat.dvd_sub` instead
+warning: ChvatalErdos/ResidueSplit.lean:24:43: unused variable `hm`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/ResidueSplit.lean:33:0: 'ChvatalErdos.split_with_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1959/2048] Built ChvatalErdos.WeightedFailure (57s)
+info: ChvatalErdos/WeightedFailure.lean:67:0: 'ChvatalErdos.degree_weighted_union_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1960/2048] Built ChvatalErdos.Remainder (58s)
+info: ChvatalErdos/Remainder.lean:103:0: 'ChvatalErdos.remainder_scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Remainder.lean:104:0: 'ChvatalErdos.remainder_from_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1961/2048] Built ChvatalErdos.AncestorBranch (46s)
+warning: ChvatalErdos/AncestorBranch.lean:41:4: 'change A.vertices.length + B.vertices.length = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: ChvatalErdos/AncestorBranch.lean:68:0: 'ChvatalErdos.RootedParent.branch_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1962/2048] Built ChvatalErdos.NeighbourCounts (54s)
+warning: ChvatalErdos/NeighbourCounts.lean:56:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ChvatalErdos/NeighbourCounts.lean:137:0: 'ChvatalErdos.neighbour_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NeighbourCounts.lean:138:0: 'ChvatalErdos.neighbour_tail_excluding_own' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NeighbourCounts.lean:139:0: 'ChvatalErdos.exit_neighbour_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1963/2048] Built ChvatalErdos.InducedCore (47s)
+info: ChvatalErdos/InducedCore.lean:49:0: 'ChvatalErdos.alpha_induced' depends on axioms: [propext, Quot.sound]
+info: ChvatalErdos/InducedCore.lean:50:0: 'ChvatalErdos.induced_neighbour_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1964/2048] Built ChvatalErdos.PathInterval (55s)
+warning: ChvatalErdos/PathInterval.lean:35:13: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/PathInterval.lean:64:0: 'ChvatalErdos.UPath.interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PathInterval.lean:65:0: 'ChvatalErdos.UPath.even_length_same_colour' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1965/2048] Built ChvatalErdos.NegativeAssociation (56s)
+warning: ChvatalErdos/NegativeAssociation.lean:265:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ChvatalErdos/NegativeAssociation.lean:273:43: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ChvatalErdos/NegativeAssociation.lean:281:73: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ChvatalErdos/NegativeAssociation.lean:310:0: 'ChvatalErdos.FiniteProbability.one_hot_negAssociated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NegativeAssociation.lean:311:0: 'ChvatalErdos.FiniteProbability.negAssociated_prod_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NegativeAssociation.lean:312:0: 'ChvatalErdos.FiniteProbability.negAssociated_disjoint_maps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NegativeAssociation.lean:313:0: 'ChvatalErdos.FiniteProbability.negAssociated_independent_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ChvatalErdos/NegativeAssociation.lean:314:0: 'ChvatalErdos.FiniteProbability.negAssociated_independent_parts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ChvatalErdos/NegativeAssociation.lean:315:0: 'ChvatalErdos.FiniteProbability.negAssociated_bernoulli_chernoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1966/2048] Built ChvatalErdos.AdaptiveOverflow (56s)
+info: ChvatalErdos/AdaptiveOverflow.lean:77:0: 'ChvatalErdos.FiniteProbability.adaptive_laplace_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/AdaptiveOverflow.lean:78:0: 'ChvatalErdos.FiniteProbability.adaptive_chernoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1967/2048] Built ChvatalErdos.FreshLaplace (56s)
+warning: ChvatalErdos/FreshLaplace.lean:10:0: automatically included section variable(s) unused in theorem `ChvatalErdos.FiniteProbability.expectation_coordinate_update`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/FreshLaplace.lean:29:0: automatically included section variable(s) unused in theorem `ChvatalErdos.FiniteProbability.freeze_update`:
+  [Fintype I]
+  [Fintype A]
+  [DecidableEq A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype A] [DecidableEq A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/FreshLaplace.lean:34:50: This simp argument is unused:
+  Function.update_of_ne hk
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵r̵e̵e̵z̵e̵,̵h̵k̵,̵h̵s̵,̵F̵u̵n̵c̵t̵i̵o̵n̵.̵u̵p̵d̵a̵t̵e̵_̵o̵f̵_̵n̵e̵ ̵h̵k̵]̵[̲f̲r̲e̲e̲z̲e̲,̲ ̲h̲k̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ChvatalErdos/FreshLaplace.lean:46:0: automatically included section variable(s) unused in theorem `ChvatalErdos.FiniteProbability.survivalWeight_nonneg`:
+  [Fintype I]
+  [Fintype A]
+  [DecidableEq I]
+  [DecidableEq A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype A] [DecidableEq I] [DecidableEq A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/FreshLaplace.lean:131:0: 'ChvatalErdos.FiniteProbability.fresh_survival_laplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FreshLaplace.lean:132:0: 'ChvatalErdos.FiniteProbability.survival_weight_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1968/2048] Built ChvatalErdos.LinkagePaths (49s)
+info: ChvatalErdos/LinkagePaths.lean:128:0: 'ChvatalErdos.strong_set_linkage' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1969/2048] Built ChvatalErdos.AffineForest (49s)
+info: ChvatalErdos/AffineForest.lean:27:0: 'ChvatalErdos.AffineObstruction.graph_independent_forest' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1970/2048] Built ChvatalErdos.AffineBaseProperties (50s)
+warning: ChvatalErdos/AffineBaseProperties.lean:79:0: automatically included section variable(s) unused in theorem `ChvatalErdos.AffineObstruction.point_card`:
+  [Fact (Nat.Prime q)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime q)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/AffineBaseProperties.lean:134:0: 'ChvatalErdos.AffineObstruction.base_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1971/2048] Built ChvatalErdos.CycleInsertionLinks (47s)
+info: ChvatalErdos/CycleInsertionLinks.lean:55:0: 'ChvatalErdos.UCycle.insertion_links' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1972/2048] Built ChvatalErdos.CycleSegments (47s)
+warning: ChvatalErdos/CycleSegments.lean:26:28: This simp argument is unused:
+  List.head_ofFn
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵e̵g̵m̵e̵n̵t̵,̵U̵P̵a̵t̵h̵.̵f̵i̵r̵s̵t̵,̵L̵i̵s̵t̵.̵h̵e̵a̵d̵_̵o̵f̵F̵n̵,̵r̵o̵t̵a̵t̵e̵d̵,̵i̵n̵d̵e̵x̵,̵N̵a̵t̵.̵m̵o̵d̵_̵e̵q̵_̵o̵f̵_̵l̵t̵[̲s̲e̲g̲m̲e̲n̲t̲,̲ ̲U̲P̲a̲t̲h̲.̲f̲i̲r̲s̲t̲,̲ ̲r̲o̲t̲a̲t̲e̲d̲,̲ ̲i̲n̲d̲e̲x̲,̲ ̲N̲a̲t̲.̲m̲o̲d̲_̲e̲q̲_̲o̲f̲_̲l̲t̲ i.isLt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/CycleSegments.lean:53:0: 'ChvatalErdos.UCycle.segment_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1973/2048] Built ChvatalErdos.PancyclicObstruction (50s)
+info: ChvatalErdos/PancyclicObstruction.lean:71:0: 'ChvatalErdos.pancyclic_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicObstruction.lean:72:0: 'ChvatalErdos.pancyclic_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicObstruction.lean:73:0: 'ChvatalErdos.pancyclic_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PancyclicObstruction.lean:74:0: 'ChvatalErdos.jackson_ordaz_pancyclic_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1974/2048] Built ChvatalErdos.RecordAlgorithm (48s)
+warning: ChvatalErdos/RecordAlgorithm.lean:174:14: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ChvatalErdos/RecordAlgorithm.lean:223:0: 'ChvatalErdos.Record.no_repeat_queries' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordAlgorithm.lean:224:0: 'ChvatalErdos.Record.query_effective_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordAlgorithm.lean:225:0: 'ChvatalErdos.Record.history_determines_state' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordAlgorithm.lean:226:0: 'ChvatalErdos.Record.conditional_effective_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordAlgorithm.lean:227:0: 'ChvatalErdos.Record.final_stop_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1975/2048] Built ChvatalErdos.LevelMass (46s)
+info: ChvatalErdos/LevelMass.lean:105:0: 'ChvatalErdos.RootedParent.mass_layer_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LevelMass.lean:106:0: 'ChvatalErdos.RootedParent.root_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1976/2048] Built ChvatalErdos.ChordedCycle (45s)
+info: ChvatalErdos/ChordedCycle.lean:104:0: 'ChvatalErdos.bipartite_min_degree_chorded' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1977/2048] Built ChvatalErdos.DegreeCoreSubset (42s)
+info: ChvatalErdos/DegreeCoreSubset.lean:36:0: 'ChvatalErdos.exists_degree_core_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1978/2048] Built ChvatalErdos.AncestorSplit (42s)
+info: ChvatalErdos/AncestorSplit.lean:63:0: 'ChvatalErdos.RootedParent.split_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1979/2048] Built ChvatalErdos.PackingCore (42s)
+info: ChvatalErdos/PackingCore.lean:89:0: 'ChvatalErdos.packing_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1980/2048] Built ChvatalErdos.TwoPathsCycle (42s)
+warning: ChvatalErdos/TwoPathsCycle.lean:23:17: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵ ̵at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ChvatalErdos/TwoPathsCycle.lean:28:17: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵ ̵at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/TwoPathsCycle.lean:55:0: 'ChvatalErdos.UPath.cycle_of_two_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1981/2048] Built ChvatalErdos.PathExpansion (42s)
+warning: ChvatalErdos/PathExpansion.lean:49:0: automatically included section variable(s) unused in theorem `ChvatalErdos.DPath.first_expand`:
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/PathExpansion.lean:56:0: automatically included section variable(s) unused in theorem `ChvatalErdos.DPath.last_expand`:
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/PathExpansion.lean:126:0: 'ChvatalErdos.DPath.expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PathExpansion.lean:127:0: 'ChvatalErdos.DPath.whole_path_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PathExpansion.lean:128:0: 'ChvatalErdos.DPath.disjoint_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PathExpansion.lean:129:0: 'ChvatalErdos.represented_internal_linkage' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1982/2048] Built ChvatalErdos.Targets (46s)
+ℹ [1983/2048] Built ChvatalErdos.CyclePeriods (41s)
+info: ChvatalErdos/CyclePeriods.lean:53:0: 'ChvatalErdos.no_crossing_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CyclePeriods.lean:54:0: 'ChvatalErdos.period_difference_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1984/2048] Built ChvatalErdos.InitialForest (42s)
+info: ChvatalErdos/InitialForest.lean:118:0: 'ChvatalErdos.initial_forest' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1985/2048] Built ChvatalErdos.CycleSegmentSeparation (41s)
+info: ChvatalErdos/CycleSegmentSeparation.lean:53:0: 'ChvatalErdos.UCycle.wrap_segment_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1986/2048] Built ChvatalErdos.RecordInvariants (41s)
+warning: ChvatalErdos/RecordInvariants.lean:54:19: This simp argument is unused:
+  h0
+
+Hint: Omit it from the simp argument list.
+  simp [action, ̲h0̵,̵h̵1, ̲Finset.card_insert_of_notMem hx]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/RecordInvariants.lean:174:0: 'ChvatalErdos.Record.run_supported_balanced' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordInvariants.lean:175:0: 'ChvatalErdos.Record.nonabort_action_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1987/2048] Built ChvatalErdos.ConditionalFreeze (46s)
+warning: ChvatalErdos/ConditionalFreeze.lean:11:0: automatically included section variable(s) unused in theorem `ChvatalErdos.freeze_mem_cylinder`:
+  [DecidableEq A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/ConditionalFreeze.lean:17:0: automatically included section variable(s) unused in theorem `ChvatalErdos.freeze_of_mem_cylinder`:
+  [DecidableEq A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/ConditionalFreeze.lean:93:0: 'ChvatalErdos.stopped_conditional_freeze' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1988/2048] Built ChvatalErdos.MatchingSurvival (48s)
+warning: ChvatalErdos/MatchingSurvival.lean:65:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ChvatalErdos/MatchingSurvival.lean:146:0: 'ChvatalErdos.FiniteProbability.negAssociated_matching_products' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ChvatalErdos/MatchingSurvival.lean:147:0: 'ChvatalErdos.FiniteProbability.PartSelection.matching_survival_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ChvatalErdos/MatchingSurvival.lean:148:0: 'ChvatalErdos.FiniteProbability.PartSelection.surviving_distinct_left_parts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ChvatalErdos/MatchingSurvival.lean:149:0: 'ChvatalErdos.FiniteProbability.PartSelection.surviving_distinct_right_parts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [1989/2048] Built ChvatalErdos.FourCycle (55s)
+warning: ChvatalErdos/FourCycle.lean:29:15: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ChvatalErdos/FourCycle.lean:39:64: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ChvatalErdos/FourCycle.lean:65:66: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ChvatalErdos/FourCycle.lean:87:65: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ChvatalErdos/FourCycle.lean:92:67: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.univ_eq_empty, ̲Finset.sum_empty, ̲Nat.cast_zero,z̵e̵r̵o̵_̵ ̲mul,̵m̵u̵l̵_zero, ̲add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/FourCycle.lean:125:0: 'ChvatalErdos.four_cycle_wedge_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/FourCycle.lean:126:0: 'ChvatalErdos.four_cycle_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1990/2048] Built ChvatalErdos.PikhurkoGrowth (60s)
+info: ChvatalErdos/PikhurkoGrowth.lean:140:0: 'ChvatalErdos.Pikhurko.layer_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PikhurkoGrowth.lean:141:0: 'ChvatalErdos.Pikhurko.layers_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/PikhurkoGrowth.lean:142:0: 'ChvatalErdos.Pikhurko.degree_bound_from_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1991/2048] Built ChvatalErdos.PathBridges (29s)
+info: ChvatalErdos/PathBridges.lean:88:0: 'ChvatalErdos.merge_path_families' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1992/2048] Built ChvatalErdos.CycleRotate (29s)
+info: ChvatalErdos/CycleRotate.lean:55:0: 'ChvatalErdos.cycleColour_rotate_period' depends on axioms: [propext, Quot.sound]
+ℹ [1993/2048] Built ChvatalErdos.OneChordPaths (30s)
+info: ChvatalErdos/OneChordPaths.lean:95:0: 'ChvatalErdos.UCycle.chord_forward_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/OneChordPaths.lean:96:0: 'ChvatalErdos.UCycle.chord_cross_minus' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/OneChordPaths.lean:97:0: 'ChvatalErdos.UCycle.chord_cross_plus' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1994/2048] Built ChvatalErdos.LogBudgets (35s)
+warning: ChvatalErdos/LogBudgets.lean:44:39: `Nat.dvd_sub'` has been deprecated: Use `Nat.dvd_sub` instead
+warning: ChvatalErdos/LogBudgets.lean:44:60: Try `simp at hd` instead of `simpa using hd`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ChvatalErdos/LogBudgets.lean:52:0: 'ChvatalErdos.colourCount_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LogBudgets.lean:53:0: 'ChvatalErdos.choose_length_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1995/2048] Built ChvatalErdos.StoppedNeighbours (33s)
+warning: ChvatalErdos/StoppedNeighbours.lean:80:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ChvatalErdos/StoppedNeighbours.lean:99:0: 'ChvatalErdos.stopped_neighbour_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1996/2048] Built ChvatalErdos.BipartiteCut (34s)
+info: ChvatalErdos/BipartiteCut.lean:66:0: 'ChvatalErdos.exists_bipartiteCut_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1997/2048] Built ChvatalErdos.CycleMatching (34s)
+warning: ChvatalErdos/CycleMatching.lean:95:30: This simp argument is unused:
+  PartSelection.vector
+
+Hint: Omit it from the simp argument list.
+  simp [̵S̵,̵e̵n̵d̵p̵o̵i̵n̵t̵S̵e̵l̵e̵c̵t̵i̵o̵n̵,̵P̵a̵r̵t̵S̵e̵l̵e̵c̵t̵i̵o̵n̵.̵v̵e̵c̵t̵o̵r̵,̵c̵y̵c̵l̵e̵M̵a̵t̵c̵h̵i̵n̵g̵V̵a̵l̵u̵e̵,̵h̵s̵i̵d̵e̵u̵,̵h̵s̵i̵d̵e̵v̵,̵a̵n̵d̵_̵c̵o̵m̵m̵]̵[̲S̲,̲ ̲e̲n̲d̲p̲o̲i̲n̲t̲S̲e̲l̲e̲c̲t̲i̲o̲n̲,̲ ̲c̲y̲c̲l̲e̲M̲a̲t̲c̲h̲i̲n̲g̲V̲a̲l̲u̲e̲,̲ ̲h̲s̲i̲d̲e̲u̲,̲ ̲h̲s̲i̲d̲e̲v̲,̲ ̲a̲n̲d̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/CycleMatching.lean:145:0: 'ChvatalErdos.cycleMatching_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleMatching.lean:146:0: 'ChvatalErdos.stopped_cycleMatching_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1998/2048] Built ChvatalErdos.RecordSeparations (37s)
+info: ChvatalErdos/RecordSeparations.lean:324:0: 'ChvatalErdos.Record.Separation.action_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordSeparations.lean:325:0: 'ChvatalErdos.Record.Separation.compatible_effective_no_abort' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ChvatalErdos/RecordSeparations.lean:326:0: 'ChvatalErdos.Record.Separation.guided_run_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1999/2048] Built ChvatalErdos.RecordOverflow (38s)
+warning: ChvatalErdos/RecordOverflow.lean:83:53: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵e̵f̵f̵,̵i̵f̵_̵p̵o̵s̵,̵s̵u̵c̵c̵e̵s̵s̵,̵d̵e̵c̵i̵d̵e̵_̵t̵r̵u̵e̵,̵B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵[̲h̲e̲f̲f̲,̲ ̲i̲f̲_̲p̲o̲s̲,̲ ̲s̲u̲c̲c̲e̲s̲s̲,̲ ̲d̲e̲c̲i̲d̲e̲_̲t̲r̲u̲e̲,̲ Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ChvatalErdos/RecordOverflow.lean:162:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ChvatalErdos/RecordOverflow.lean:171:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ChvatalErdos/RecordOverflow.lean:175:0: 'ChvatalErdos.Record.weight_of_full_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordOverflow.lean:176:0: 'ChvatalErdos.Record.overflow_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordOverflow.lean:177:0: 'ChvatalErdos.Record.overflow_selection_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2000/2048] Built ChvatalErdos.DirectedCycles (30s)
+warning: ChvatalErdos/DirectedCycles.lean:15:0: automatically included section variable(s) unused in theorem `ChvatalErdos.DCycle.length_ge_two`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ChvatalErdos/DirectedCycles.lean:70:0: 'ChvatalErdos.hamiltonian_of_spanning_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2001/2048] Built ChvatalErdos.ExtraPathMerge (30s)
+info: ChvatalErdos/ExtraPathMerge.lean:115:0: 'ChvatalErdos.merge_with_extra_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2002/2048] Built ChvatalErdos.ShortChord (33s)
+info: ChvatalErdos/ShortChord.lean:46:0: 'ChvatalErdos.chord_beyond_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2003/2048] Built ChvatalErdos.FarChord (33s)
+info: ChvatalErdos/FarChord.lean:74:0: 'ChvatalErdos.far_chord_period_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2004/2048] Built ChvatalErdos.RecordWords (35s)
+info: ChvatalErdos/RecordWords.lean:139:0: 'ChvatalErdos.Record.Separation.exists_compatible_record' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2005/2048] Built ChvatalErdos.NormalRecords (35s)
+info: ChvatalErdos/NormalRecords.lean:76:0: 'ChvatalErdos.Record.Separation.left_exit_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NormalRecords.lean:77:0: 'ChvatalErdos.Record.Separation.right_entrance_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2006/2048] Built ChvatalErdos.CutMass (40s)
+info: ChvatalErdos/CutMass.lean:54:0: 'ChvatalErdos.cut_union_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2007/2048] Built ChvatalErdos.ChordedDensity (40s)
+info: ChvatalErdos/ChordedDensity.lean:82:0: 'ChvatalErdos.bipartite_mass_of_no_chorded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ChordedDensity.lean:83:0: 'ChvatalErdos.mass_of_no_bipartite_chorded' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2008/2048] Built ChvatalErdos.AuxiliaryGraph (38s)
+info: ChvatalErdos/AuxiliaryGraph.lean:103:0: 'ChvatalErdos.auxiliary_strong_of_no_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2009/2048] Built ChvatalErdos.MatchingObstruction (38s)
+info: ChvatalErdos/MatchingObstruction.lean:136:0: 'ChvatalErdos.Record.Separation.matching_count_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/MatchingObstruction.lean:137:0: 'ChvatalErdos.stopped_matching_obstruction_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2010/2048] Built ChvatalErdos.RemainderLogBound (50s)
+info: ChvatalErdos/RemainderLogBound.lean:60:0: 'ChvatalErdos.remainder_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2011/2048] Built ChvatalErdos.CycleInsertion (26s)
+warning: ChvatalErdos/CycleInsertion.lean:13:0: automatically included section variable(s) unused in theorem `ChvatalErdos.DCycle.arc_of_hasArc`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ChvatalErdos/CycleInsertion.lean:124:34: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵o̵n̵,̵o̵r̵_̵a̵s̵s̵o̵c̵,̵o̵r̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵o̵r̵_̵c̵o̵m̵m̵]̵[̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲o̲n̲,̲ ̲o̲r̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲,̲ ̲o̲r̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/CycleInsertion.lean:150:0: 'ChvatalErdos.DCycle.cut_at_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleInsertion.lean:151:0: 'ChvatalErdos.DCycle.insert_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleInsertion.lean:152:0: 'ChvatalErdos.DCycle.insert_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/CycleInsertion.lean:153:0: 'ChvatalErdos.hamiltonian_by_insertions' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2012/2048] Built ChvatalErdos.HalvingMerge (26s)
+info: ChvatalErdos/HalvingMerge.lean:87:0: 'ChvatalErdos.halving_merge' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2013/2048] Built ChvatalErdos.ChordPathLemma (24s)
+info: ChvatalErdos/ChordPathLemma.lean:73:0: 'ChvatalErdos.chord_no_crossing_bipartition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ChordPathLemma.lean:74:0: 'ChvatalErdos.chord_crossing_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2014/2048] Built ChvatalErdos.PackingCoordinates (22s)
+info: ChvatalErdos/PackingCoordinates.lean:86:0: 'ChvatalErdos.Record.coordinate_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2015/2048] Built ChvatalErdos.NeighbourObstruction (27s)
+warning: ChvatalErdos/NeighbourObstruction.lean:33:118: This simp argument is unused:
+  and_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵r̵e̵c̵t̵e̵d̵N̵e̵i̵g̵h̵b̵o̵u̵r̵E̵v̵e̵n̵t̵,̵n̵e̵i̵g̵h̵b̵o̵u̵r̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵s̵,̵n̵e̵i̵g̵h̵b̵o̵u̵r̵I̵n̵d̵i̵c̵e̵s̵,̵n̵e̵i̵g̵h̵b̵o̵u̵r̵E̵v̵e̵n̵t̵,̵e̵x̵i̵t̵N̵e̵i̵g̵h̵b̵o̵u̵r̵E̵v̵e̵n̵t̵,̵h̵,̵a̵n̵d̵_̵c̵o̵m̵m̵,̵a̵n̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵]̵[̲d̲i̲r̲e̲c̲t̲e̲d̲N̲e̲i̲g̲h̲b̲o̲u̲r̲E̲v̲e̲n̲t̲,̲ ̲n̲e̲i̲g̲h̲b̲o̲u̲r̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲s̲,̲ ̲n̲e̲i̲g̲h̲b̲o̲u̲r̲I̲n̲d̲i̲c̲e̲s̲,̲ ̲n̲e̲i̲g̲h̲b̲o̲u̲r̲E̲v̲e̲n̲t̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲e̲x̲i̲t̲N̲e̲i̲g̲h̲b̲o̲u̲r̲E̲v̲e̲n̲t̲,̲ ̲h̲,̲ ̲a̲n̲d̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/NeighbourObstruction.lean:125:0: 'ChvatalErdos.Record.Separation.exists_low_neighbour_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/NeighbourObstruction.lean:126:0: 'ChvatalErdos.Record.stopped_neighbour_obstruction_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2016/2048] Built ChvatalErdos.LayerMerge (22s)
+info: ChvatalErdos/LayerMerge.lean:65:0: 'ChvatalErdos.halving_with_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2017/2048] Built ChvatalErdos.BidirectionalInsertion (22s)
+info: ChvatalErdos/BidirectionalInsertion.lean:78:0: 'ChvatalErdos.hamiltonian_by_bidirectional_insertions' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2018/2048] Built ChvatalErdos.LayerClosing (22s)
+info: ChvatalErdos/LayerClosing.lean:54:0: 'ChvatalErdos.close_with_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2019/2048] Built ChvatalErdos.CutChordPaths (23s)
+info: ChvatalErdos/CutChordPaths.lean:94:0: 'ChvatalErdos.ChordedCycle.path_across_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2020/2048] Built ChvatalErdos.LargeSide (21s)
+info: ChvatalErdos/LargeSide.lean:95:0: 'ChvatalErdos.Record.stopped_large_side_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2021/2048] Built ChvatalErdos.LayerIteration (19s)
+info: ChvatalErdos/LayerIteration.lean:117:0: 'ChvatalErdos.iterate_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2022/2048] Built ChvatalErdos.SmallSide (23s)
+info: ChvatalErdos/SmallSide.lean:92:0: 'ChvatalErdos.Record.stopped_small_side_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2023/2048] Built ChvatalErdos.GlobalNeighbours (23s)
+info: ChvatalErdos/GlobalNeighbours.lean:186:0: 'ChvatalErdos.vertex_neighbour_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/GlobalNeighbours.lean:187:0: 'ChvatalErdos.all_neighbour_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2024/2048] Built ChvatalErdos.LevelChordCycle (18s)
+warning: ChvatalErdos/LevelChordCycle.lean:12:55: unused variable `hk`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/LevelChordCycle.lean:44:0: 'ChvatalErdos.RootedParent.cycle_from_level_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2025/2048] Built ChvatalErdos.LayerCycle (15s)
+info: ChvatalErdos/LayerCycle.lean:111:0: 'ChvatalErdos.cycle_from_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2026/2048] Built ChvatalErdos.LevelBounds (17s)
+warning: ChvatalErdos/LevelBounds.lean:10:47: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ChvatalErdos/LevelBounds.lean:23:49: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/LevelBounds.lean:58:0: 'ChvatalErdos.RootedParent.mass_level_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LevelBounds.lean:59:0: 'ChvatalErdos.RootedParent.mass_between_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2027/2048] Built ChvatalErdos.NormalStopBound (21s)
+info: ChvatalErdos/NormalStopBound.lean:99:0: 'ChvatalErdos.Record.normal_stopping_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2028/2048] Built ChvatalErdos.SelectedLayers (13s)
+info: ChvatalErdos/SelectedLayers.lean:77:0: 'ChvatalErdos.cycle_from_selected_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2029/2048] Built ChvatalErdos.PikhurkoDegree (18s)
+warning: ChvatalErdos/PikhurkoDegree.lean:19:26: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/PikhurkoDegree.lean:63:0: 'ChvatalErdos.no_even_cycle_min_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2030/2048] Built ChvatalErdos.RecordProbability (18s)
+warning: ChvatalErdos/RecordProbability.lean:56:12: `Finset.eq_empty_iff_forall_not_mem` has been deprecated: Use `Finset.eq_empty_iff_forall_notMem` instead
+info: ChvatalErdos/RecordProbability.lean:163:0: 'ChvatalErdos.Record.normalBad_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordProbability.lean:164:0: 'ChvatalErdos.Record.one_record_bad_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/RecordProbability.lean:165:0: 'ChvatalErdos.Record.all_separations_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2031/2048] Built ChvatalErdos.SelectedHamiltonian (14s)
+info: ChvatalErdos/SelectedHamiltonian.lean:64:0: 'ChvatalErdos.hamiltonian_from_selected_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2032/2048] Built ChvatalErdos.ForestHamiltonian (13s)
+info: ChvatalErdos/ForestHamiltonian.lean:37:0: 'ChvatalErdos.hamiltonian_from_forest_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2033/2048] Built ChvatalErdos.Selection (18s)
+info: ChvatalErdos/Selection.lean:171:0: 'ChvatalErdos.selection_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Selection.lean:172:0: 'ChvatalErdos.actualPathNeighbours_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2034/2048] Built ChvatalErdos.CoreSelection (14s)
+warning: ChvatalErdos/CoreSelection.lean:31:29: This simp argument is unused:
+  active
+
+Hint: Omit it from the simp argument list.
+  simp [a̵c̵t̵i̵v̵e̵,̵directedNeighbourEvent, ̲neighbourEvent, ̲exitNeighbourEvent,
+        terminalCoordinates, ̲UCycle.mapGraph, ̲inducedEmbedding, ̲and_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: ChvatalErdos/CoreSelection.lean:80:0: 'ChvatalErdos.core_selection_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2035/2048] Built ChvatalErdos.CycleCoreHamiltonian (13s)
+info: ChvatalErdos/CycleCoreHamiltonian.lean:78:0: 'ChvatalErdos.hamiltonian_with_cycle_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2036/2048] Built ChvatalErdos.PackingHamiltonian (14s)
+info: ChvatalErdos/PackingHamiltonian.lean:23:0: 'ChvatalErdos.hamiltonian_from_small_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2037/2048] Built ChvatalErdos.ExtremalReduction (14s)
+warning: ChvatalErdos/ExtremalReduction.lean:13:39: unused variable `Q`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ChvatalErdos/ExtremalReduction.lean:67:0: 'ChvatalErdos.maximal_remainder_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/ExtremalReduction.lean:68:0: 'ChvatalErdos.quantitative_of_even_cycle_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2038/2048] Built ChvatalErdos.QuantitativeK2 (14s)
+info: ChvatalErdos/QuantitativeK2.lean:22:0: 'ChvatalErdos.quantitative_k_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2039/2048] Built ChvatalErdos.EvenCycleBound (17s)
+info: ChvatalErdos/EvenCycleBound.lean:47:0: 'ChvatalErdos.even_cycle_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/EvenCycleBound.lean:48:0: 'ChvatalErdos.quantitative_claim' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2040/2048] Built ChvatalErdos.AsymptoticLarge (21s)
+info: ChvatalErdos/AsymptoticLarge.lean:61:0: 'ChvatalErdos.large_asymptotic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2041/2048] Built ChvatalErdos.AsymptoticFinite (15s)
+info: ChvatalErdos/AsymptoticFinite.lean:59:0: 'ChvatalErdos.asymptotic_claim' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2042/2048] Built ChvatalErdos.EpsilonBound (20s)
+info: ChvatalErdos/EpsilonBound.lean:58:0: 'ChvatalErdos.epsilon_claim' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2043/2048] Built ChvatalErdos.LeastBound (19s)
+info: ChvatalErdos/LeastBound.lean:50:0: 'ChvatalErdos.f₂_sufficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LeastBound.lean:51:0: 'ChvatalErdos.f₂_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LeastBound.lean:52:0: 'ChvatalErdos.f₂_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LeastBound.lean:53:0: 'ChvatalErdos.f₂_epsilon' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2044/2048] Built ChvatalErdos.BipartiteExample (16s)
+info: ChvatalErdos/BipartiteExample.lean:92:0: 'ChvatalErdos.completeBipartite_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/BipartiteExample.lean:93:0: 'ChvatalErdos.completeBipartite_no_odd_hamiltonian' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2045/2048] Built ChvatalErdos.LinearLowerBound (17s)
+warning: ChvatalErdos/LinearLowerBound.lean:29:6: 'change ¬a + v.val < a' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: ChvatalErdos/LinearLowerBound.lean:71:0: 'ChvatalErdos.unbalanced_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/LinearLowerBound.lean:72:0: 'ChvatalErdos.f₂_linear_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2046/2048] Built ChvatalErdos.Main (18s)
+info: ChvatalErdos/Main.lean:51:0: 'ChvatalErdos.main_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Main.lean:52:0: 'ChvatalErdos.main_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Main.lean:53:0: 'ChvatalErdos.main_epsilon' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Main.lean:54:0: 'ChvatalErdos.main_linear_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Main.lean:55:0: 'ChvatalErdos.main_pancyclic_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ChvatalErdos/Main.lean:56:0: 'ChvatalErdos.main_pancyclic_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2047/2048] Built ChvatalErdos (15s)
+Build completed successfully (2048 jobs).
+'ChvatalErdos.main_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ChvatalErdos.main_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ChvatalErdos.main_epsilon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ChvatalErdos.main_linear_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ChvatalErdos.main_pancyclic_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ChvatalErdos.main_pancyclic_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]

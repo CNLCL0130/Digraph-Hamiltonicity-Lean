@@ -1,0 +1,794 @@
+{
+  "full_paper": "VERIFIED",
+  "local_modules": "COMPILED_FROM_SOURCE_IN_FRESH_DIRECTORY",
+  "verified_module_count": 127,
+  "started_at_utc": "2026-10-09T14:57:48.579907+00:00",
+  "checked_at_utc": "2026-10-09T15:01:10.554704+00:00",
+  "proved_main_theorems": [
+    "ChvatalErdos.main_quantitative",
+    "ChvatalErdos.main_asymptotic",
+    "ChvatalErdos.main_epsilon",
+    "ChvatalErdos.main_linear_lower",
+    "ChvatalErdos.main_pancyclic_obstruction",
+    "ChvatalErdos.main_pancyclic_construction"
+  ],
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlib": "v4.24.0",
+  "build_directory": "<redacted-local-build-directory>",
+  "paper_sha256": "39995ece3895bb93781f334d4e2511f0d2cafebd4e680010f42041246811f8bb",
+  "sources": [
+    {
+      "file": "ChvatalErdos/AdaptiveOverflow.lean",
+      "sha256": "d2e115536e6b39a7372212c41e86c7d936c1a6c8cd1393cd19131b0a9f8e62f2",
+      "olean_sha256": "c43b30840adcc200e0ae32743a64a8b72f595587adecd9219228e0d9cb05c0af",
+      "compiled_at_utc": "2026-10-09T14:39:52.992208+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AdaptiveQueries.lean",
+      "sha256": "67c613f34d09450b0669a121f928ecbcae62a23079ae64e21596791f6204f100",
+      "olean_sha256": "8b5e0a6b5d2354f7627b7d0f58a283ddd10206452db7217e8de5a762df5fe1ad",
+      "compiled_at_utc": "2026-10-09T14:39:42.011999+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AffineBaseProperties.lean",
+      "sha256": "7628a6a1ff1fb381929e92a704e0f1d62dce27e8926d9394c75f35335babed1d",
+      "olean_sha256": "ff646135f7a837142291e8b743dd90c60aaf5c371210acaf53affa05afe706e6",
+      "compiled_at_utc": "2026-10-09T15:00:39.334317+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AffineForest.lean",
+      "sha256": "54c1451efa985f1b73038178eb5359fe5e4e0c012f30f798a53f1b46d9d2c655",
+      "olean_sha256": "fd015d09edfc028ae7ec165cb6e45775f8519fa258c26ed39b91a0c5eb15912e",
+      "compiled_at_utc": "2026-10-09T15:00:38.667678+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AffineObstruction.lean",
+      "sha256": "ec927f51723a5721aa1d593cebb99643c1bceff23085693253abd140538afbc8",
+      "olean_sha256": "ef8bcd0c96110bfdd202a0cfd9bb13bc4878553a4b28b4c3128b5da657d4854b",
+      "compiled_at_utc": "2026-10-09T15:00:19.690499+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AncestorBranch.lean",
+      "sha256": "f2d9d4591d55b430070070ef25662189b25bb92296756dca14c936a45810acac",
+      "olean_sha256": "322155966a27e5c6d1889c94ed92696f610119b31489129b3de1f9b9559c3794",
+      "compiled_at_utc": "2026-10-09T14:45:37.299253+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AncestorSplit.lean",
+      "sha256": "55794cd2349be43334fb65faa92e87ca82cfaa82b3fc2650b107809316c89495",
+      "olean_sha256": "374490ac1f20772c1c2be6aebc829630ee270a2924750f174ffc870d4631ab77",
+      "compiled_at_utc": "2026-10-09T14:47:18.138356+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Ancestors.lean",
+      "sha256": "6a16bf5f9da4f888c346a6de8f2d09e98d7a97ed63368cb8aab12cf77e92402b",
+      "olean_sha256": "4a3f0911c7fbe77451dee8b27acfa3e9090348fdfddbde339a1a2d4a50597103",
+      "compiled_at_utc": "2026-10-09T14:42:46.217023+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AsymptoticFinite.lean",
+      "sha256": "635a3c3d08f787c27e2a6895f96fc4faca1f59e90bfd16682bd73ebe0681c849",
+      "olean_sha256": "11a3a16d9d2b6a0820a6097c3021f143105e78ad8e971aa37264a8b3d13c8cff",
+      "compiled_at_utc": "2026-10-09T14:55:37.362506+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AsymptoticLarge.lean",
+      "sha256": "310c99f9d7cd0d45ca0bc74112c271e4c2543a536e4d59b5d21bcc5050aa89e2",
+      "olean_sha256": "3590cd2c22cd787afcc6b5a36954799eba721f6eba585e3a17b5763cfe7677dd",
+      "compiled_at_utc": "2026-10-09T14:55:18.654432+00:00"
+    },
+    {
+      "file": "ChvatalErdos/AuxiliaryGraph.lean",
+      "sha256": "796a605fea922c10eca17b67c90fe40047ef114db9312541123dfdae719c86f5",
+      "olean_sha256": "d54615e8b85974e9b6d753b052b9717f962930c2c9121cde98ca3b56cb830792",
+      "compiled_at_utc": "2026-10-09T14:49:31.635259+00:00"
+    },
+    {
+      "file": "ChvatalErdos/BidirectionalInsertion.lean",
+      "sha256": "1a496f60ce49940a3c12d4095602d539ec3f09e1762824c5ba5e0f4431555af0",
+      "olean_sha256": "5f647abc63d427f5e92adf51b50081b55807c54e1b97475db517a14c4649f125",
+      "compiled_at_utc": "2026-10-09T14:50:28.384901+00:00"
+    },
+    {
+      "file": "ChvatalErdos/BipartiteCut.lean",
+      "sha256": "952d1b2255311b64be1535a14eaff93bbd012a4d38d23e4f091a038e5065385d",
+      "olean_sha256": "639afc91451cf8a83206bafbc021a726f6509fbb46d8cdd83781f06e9387b4f6",
+      "compiled_at_utc": "2026-10-09T14:45:42.021417+00:00"
+    },
+    {
+      "file": "ChvatalErdos/BipartiteExample.lean",
+      "sha256": "69154ee33fafa1e7810b9def7483bae1be5c3cea615ea754ec0d9894744933a2",
+      "olean_sha256": "ca731a46804322c1b3daa8b72f575e47249b583f69ad19b4bf0e0ff3ad457caf",
+      "compiled_at_utc": "2026-10-09T14:56:33.856112+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Budgets.lean",
+      "sha256": "a6c7f90d03dcffea04747c5403dbb235d173266355f16e781b8859606c4d723f",
+      "olean_sha256": "b061e17e18b81c0a3f4649f96a266b9b4125740a5373974bf5ff811900c2c9c4",
+      "compiled_at_utc": "2026-10-09T14:38:04.888944+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CaroWei.lean",
+      "sha256": "5ee60d6292bb0b150faf499d583e4cdb6c9d61419b33358d4596d3a746b61295",
+      "olean_sha256": "f8a9ac7f58b534ff30153c48a3bb9eeea23bfcbc249d0b391c19e5c2f74c4929",
+      "compiled_at_utc": "2026-10-09T14:38:07.351359+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Chernoff.lean",
+      "sha256": "793d22a163ffb780a9505e0d3ea490eaab49d9cfedf3f6de175753095ae3e1d0",
+      "olean_sha256": "e6171de8b8205e347610ccd8a85431bc8be77d2f066dc3ce373302f1d98c1bed",
+      "compiled_at_utc": "2026-10-09T14:38:12.539123+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ChordPathLemma.lean",
+      "sha256": "a5c7f2b9bdf9ea80a9fd089ba221891d71078af7c93568286a1e245035893ad7",
+      "olean_sha256": "ead06873d1cecb1dad2ab1a05ca889707d337d6f734ce7132db7b8c284872933",
+      "compiled_at_utc": "2026-10-09T14:50:28.917650+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ChordedCycle.lean",
+      "sha256": "39d7bbf793ca6cfe877ab2b1c131897bcc00e1d9b4be75885e909f48e7eb6880",
+      "olean_sha256": "471c0f6d06a9ffada4e1068320ced6aa9422cf84629c7de786d0b5e68387b9f5",
+      "compiled_at_utc": "2026-10-09T14:45:39.402608+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ChordedDensity.lean",
+      "sha256": "a6f3d2fb0789d5c6d60ca6d1677607e033107d75e45189962ce2c66171fce2d2",
+      "olean_sha256": "ae01570eae2e8096c596cf1d374a17d83b4ed4f3cc1849647eb1a488bd581a77",
+      "compiled_at_utc": "2026-10-09T14:47:24.063613+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ColourFibres.lean",
+      "sha256": "8b52749517ffe15485d9fa35eb91aadff073d76c3c6dfee6707381645b8b71cb",
+      "olean_sha256": "a7b4af24483e879c57cb3d548c5dffaaf8da83afb9dba1fb273a096a41b55cb3",
+      "compiled_at_utc": "2026-10-09T14:39:40.710195+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ComplementaryPaths.lean",
+      "sha256": "15bed41bb47b994bc4ef62383e4941c9a09ae3c7754b2cec31b2abba5fd6bfeb",
+      "olean_sha256": "f587495cf11f3359aba0f179b91c3e92118b92b76cf1cdf277796a7700f6535b",
+      "compiled_at_utc": "2026-10-09T14:42:48.952999+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ConditionalFreeze.lean",
+      "sha256": "9436aa0da18ecae13081dde06cf87600bec2ad4bc3163b06e0d13239619fa814",
+      "olean_sha256": "601f058a3dd0b1e8e2d74d3f2d5e97361941136c44500382b715a68b70ba1f8b",
+      "compiled_at_utc": "2026-10-09T14:42:52.120915+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ConditionalUnion.lean",
+      "sha256": "b09e31f5d79ac178bc11905be542869eedc7456bebf8af83aef9febe7d21268c",
+      "olean_sha256": "1322efa893bf9a466831510ab6540c2c4857192630ad4e2b0d51e936b960ef39",
+      "compiled_at_utc": "2026-10-09T14:38:36.112473+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Connectivity.lean",
+      "sha256": "5776cbbc5965c7d0b23f1c6cf569ea41ca7acdee6ae60a67b8a1b62ecbc72f00",
+      "olean_sha256": "79efe5c8aeb393e9698b9c79395770c9bb9ad5f37e3d9ca989261ab8936bff6a",
+      "compiled_at_utc": "2026-10-09T14:38:37.625179+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Core.lean",
+      "sha256": "71d2ed4f576a1f3e67b9223d490b46ae004bcb0e36a51548e10eafa842306490",
+      "olean_sha256": "1e5c149d434510332541f8637b4ed2daf2a1d1a42fb52875857982a38569fbd7",
+      "compiled_at_utc": "2026-10-09T14:36:51.920223+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CoreSelection.lean",
+      "sha256": "b7b3c71806c30a09124cca226b02815ea65c3776ca4555a93bfcc73e00feb268",
+      "olean_sha256": "1eb3229819ffa05ea8edd9c1f6cd31f4ec3266da5b2a58f1ed77263e9997fe35",
+      "compiled_at_utc": "2026-10-09T14:53:19.563562+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CutChordPaths.lean",
+      "sha256": "6c82837eca0b7f6b615f7a9f8f10e676b18bb0c5abcab767342e76fc405a558b",
+      "olean_sha256": "11da39c314ecba8d5bcc5e9c03103ceba2c00b7c93f0410e58bec9553d77f738",
+      "compiled_at_utc": "2026-10-09T14:51:15.341677+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CutMass.lean",
+      "sha256": "a4871150c0b990a2aa749b6fd71984ba6174e82a47c293f9d605ec6522dd9392",
+      "olean_sha256": "81d19906834e9df7c99506f78155332dc4d4c4a9edc01f94d3df37b2ba831d1e",
+      "compiled_at_utc": "2026-10-09T14:47:21.432818+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CutMatching.lean",
+      "sha256": "bd81270fd6ad299316ee6d107d94198887d12d0efcf70eea8ab8bdb949bfacb5",
+      "olean_sha256": "2792cd8866c4240474ba38caf11ba30435d332c4ed68de1d67dd5ced829cdd52",
+      "compiled_at_utc": "2026-10-09T14:38:43.832065+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleChoice.lean",
+      "sha256": "7f9d58b33a46817d207c20b570909c11618a4c95dbd9f2b371c8422da612ea5e",
+      "olean_sha256": "de219f7b74f2e313c7cfc1a3d21516b5be381a8c8dc3769063a43059f010dc60",
+      "compiled_at_utc": "2026-10-09T14:40:13.173228+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleCoreHamiltonian.lean",
+      "sha256": "b976075d959a855bcd985c70cb6768d8c712f349e4f9e5690227b6c29ccda0b7",
+      "olean_sha256": "7cdf98707c802b9cfeab8a43c457bf8836f53f1824f216898e1589669a717521",
+      "compiled_at_utc": "2026-10-09T14:53:36.443114+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleEndpoints.lean",
+      "sha256": "14f2a45e2b488637460ae0c0f638d982f48626912d10dd2792616743d355dce0",
+      "olean_sha256": "c0c1b12e0f3085301d3eb53b72d00c30db7590d0e57e882bf6adec7be765302c",
+      "compiled_at_utc": "2026-10-09T14:39:04.191785+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleInsertion.lean",
+      "sha256": "04219c5ad8d2dce9c375957539334e2110d5be91b9c028c31ab37733a93c6770",
+      "olean_sha256": "3f1702e3a59b365bdba45687f277249c92194e7ccf71e0679e7049e6c612158a",
+      "compiled_at_utc": "2026-10-09T14:49:31.212287+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleInsertionLinks.lean",
+      "sha256": "9c8034e97cf973f8ace8f46c1e29d76a883258a8fb14b45720c9dd62d741be45",
+      "olean_sha256": "bd3dfe88e167798279da9cc88599c666cfc16f78b9c7fb449f9abb7ee578fff5",
+      "compiled_at_utc": "2026-10-09T14:45:59.469180+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleMatching.lean",
+      "sha256": "c728c90103bc124b5ef9fd718e48730d37daad9715b8400ddb4ab7c1884a1f9d",
+      "olean_sha256": "d29c70cc6b1007af9eceb973af00f8b5c5df570b9a50868e78f68058c2686d66",
+      "compiled_at_utc": "2026-10-09T14:46:07.764459+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CyclePacking.lean",
+      "sha256": "b027cd80f4b3a593fe0c154fce8f7dec6cfe2784039d25ffefe460492f5a91c0",
+      "olean_sha256": "dd02ad5991685a118361afa68cd06fc73c5ffdfb352ff3643c25b6619c8cd3d2",
+      "compiled_at_utc": "2026-10-09T14:40:09.594322+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleParts.lean",
+      "sha256": "04a7cab046ec3f500e94f0b0e971dae2fd94c836c24b6cbd9dbcda9467d4d4e7",
+      "olean_sha256": "4e662b952da5ca30a8e14c743947bfb6b1cc48a7f0fc27c6ec8003108307f83e",
+      "compiled_at_utc": "2026-10-09T14:43:19.952463+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CyclePeriods.lean",
+      "sha256": "b60ff2c03deb10310b64599af2369c0ddceb83388ee7439a6966c17df561f124",
+      "olean_sha256": "22e5c36bec877f54cb6b3ce248accd12bf3116218875d3e5a43e5ee15cfaa0cd",
+      "compiled_at_utc": "2026-10-09T14:47:35.639076+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleRotate.lean",
+      "sha256": "3ab1646de1eb208eb6ee85217083c3c66721698d6946448ba693e1324e785927",
+      "olean_sha256": "7190217a5f80fc84162ad6d21963e4838bc1f1628ba83f048da2ae1b471dfc2e",
+      "compiled_at_utc": "2026-10-09T14:48:42.630841+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleSegmentSeparation.lean",
+      "sha256": "dc713dd3e21a826397caead00e02426b5c560d02877e60838f2945c798b2421b",
+      "olean_sha256": "b9bf1c55bb64d9c605e4c67af9eff34134787f37a3f284bb194642afe3741815",
+      "compiled_at_utc": "2026-10-09T14:47:39.072097+00:00"
+    },
+    {
+      "file": "ChvatalErdos/CycleSegments.lean",
+      "sha256": "b30798aa6cb143dd567913ea051a67c3e3b3827a78b374c65c7e1426c762861d",
+      "olean_sha256": "8b9cf4c893006814b29e334572172b5c13a8ead3745320805e414b71b68150ff",
+      "compiled_at_utc": "2026-10-09T14:46:05.294768+00:00"
+    },
+    {
+      "file": "ChvatalErdos/DeferredDecisions.lean",
+      "sha256": "a7398beefc5c78770b420dd8f20909cac65f6d620bf97922aab01d5cbe1e8faa",
+      "olean_sha256": "f4f96c8aeee9a82eeea2ca9018738d19a263b701af8af3e7230bcf31865de5a4",
+      "compiled_at_utc": "2026-10-09T14:39:07.851979+00:00"
+    },
+    {
+      "file": "ChvatalErdos/DegreeCore.lean",
+      "sha256": "9ffea9196b5360ea4aca3c7446abaa45717f4164c1ed0d6b5e50239121abb08a",
+      "olean_sha256": "9e056827627617f8b94907c2ba7c64054f7167af3da328c0ba11a0dfdc6749a5",
+      "compiled_at_utc": "2026-10-09T14:40:24.978921+00:00"
+    },
+    {
+      "file": "ChvatalErdos/DegreeCoreSubset.lean",
+      "sha256": "ba877e18a55ee09d19d5806e832de7ceb73b10ce338a79163e934a797c6f9a6d",
+      "olean_sha256": "19e84d49d25f2d70400e32c004f7a0d500c67f00f3eae358cb37c6e4b9b237ed",
+      "compiled_at_utc": "2026-10-09T14:43:23.169517+00:00"
+    },
+    {
+      "file": "ChvatalErdos/DirectedCycles.lean",
+      "sha256": "5618d423026d60c114d2a62f6eceb14c5bab3f30b9973c6556b1ab208b9e5a47",
+      "olean_sha256": "6cf6012dc6c50ee877b84a772bc3413467e5b7ae7d363d1b63cc710f8c9c1af6",
+      "compiled_at_utc": "2026-10-09T14:48:42.183870+00:00"
+    },
+    {
+      "file": "ChvatalErdos/DirectedPaths.lean",
+      "sha256": "52595c094e913082bfe763ef039e5ce2c82ee60f7f351bfe713e913d29536984",
+      "olean_sha256": "9d19d132ea21c0709124c9440a983ffb6bd775e4cd534a81d17f9362698c3bb5",
+      "compiled_at_utc": "2026-10-09T14:40:36.933556+00:00"
+    },
+    {
+      "file": "ChvatalErdos/EpsilonBound.lean",
+      "sha256": "775bafd21d11504e8cae17efb621b9315462716294c7b3749d65a1433faca4dc",
+      "olean_sha256": "d3fb4fd1a5a9762b5b29eea4c17b4a138b6af2c621a8acbd2102df52a6b625e3",
+      "compiled_at_utc": "2026-10-09T14:55:56.634741+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Estimates.lean",
+      "sha256": "7a7b6a77f2789c194e5fa4497baf97f2e32f33afb5470536ba7d3d1eea4a77af",
+      "olean_sha256": "f1fa7f05b7b5a7649c291747e6caa0c0233ee9010712b9c09890b381b1c24be4",
+      "compiled_at_utc": "2026-10-09T14:37:18.606837+00:00"
+    },
+    {
+      "file": "ChvatalErdos/EvenCycleBound.lean",
+      "sha256": "6fb267c92cecb646a0cef78654451e9d0fab2142c897ae88137f703bf2627894",
+      "olean_sha256": "398794ccb9438ffd651f9cde28758a4a42a3e7a0fb72a6b08780be1c31a1aa43",
+      "compiled_at_utc": "2026-10-09T14:54:53.846905+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ExtraPathMerge.lean",
+      "sha256": "070a30d7717f04bd7d6664b58ebc27fbbe91b1ae26a8db824c6f2da62197591a",
+      "olean_sha256": "aa539d4937b8ba8c27ddde0e7c35b1bf24e5ad9e2af6bfe5fa6dee774fce0573",
+      "compiled_at_utc": "2026-10-09T14:48:42.487691+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ExtremalReduction.lean",
+      "sha256": "bf8a7c692e482a741f363cddeb9064669d7e5aac71641b045885af7286b42147",
+      "olean_sha256": "c20f28ca8b773c832c893f6544395f4935c085907d39d1e03fcf66ddce479b83",
+      "compiled_at_utc": "2026-10-09T14:54:13.415889+00:00"
+    },
+    {
+      "file": "ChvatalErdos/FarChord.lean",
+      "sha256": "8e2a7ed0e9b2098d1064c838f7c9914c5c98aae4663e69800182f7005e1086fc",
+      "olean_sha256": "91d0ce991775a5d307eb8089e10516b1ca6217bcc21682a019ee5e4aa05c2296",
+      "compiled_at_utc": "2026-10-09T14:49:32.535518+00:00"
+    },
+    {
+      "file": "ChvatalErdos/FiniteProbability.lean",
+      "sha256": "ba2ca04cf47562d17048da3afb6872f475137ed9f4501e28906838f4ec2b7152",
+      "olean_sha256": "4708ab0a019fbd2125962197215c38fe0d05637eebb52518c84e3a5dafaad81e",
+      "compiled_at_utc": "2026-10-09T14:37:04.941514+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Forest.lean",
+      "sha256": "73e75ce897d228ab940ceb65285db1ff99e453cb0c10efb7f60c12def5b34d5d",
+      "olean_sha256": "ed58798a7fc204d6ea7c35409bd47110dbb732fa5f8a1efeca1cedf8747e34aa",
+      "compiled_at_utc": "2026-10-09T14:40:41.253355+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ForestHamiltonian.lean",
+      "sha256": "9eb20a78842509ee8415d5670083756eeab4cc2ffdbf317f2480928137045338",
+      "olean_sha256": "9ba562e1fadd2b360c6af46e6745067e7beb8daae7a4efcf4d43ef5f9b97edd7",
+      "compiled_at_utc": "2026-10-09T14:53:15.789758+00:00"
+    },
+    {
+      "file": "ChvatalErdos/FourCycle.lean",
+      "sha256": "bf002f919317489e4066c9faffbf8bdd1c0c1ca9408e6cc7e89b7261d47152e2",
+      "olean_sha256": "95049eeb27ec0e346205139700081919e1e5cb38320fe63e2a38193c4d7286ac",
+      "compiled_at_utc": "2026-10-09T14:43:37.803350+00:00"
+    },
+    {
+      "file": "ChvatalErdos/FourPartObstruction.lean",
+      "sha256": "6f8bf7120bebf2ddeb7a03627d3054d6424caea7f2f39dc6a260fdbee34a9570",
+      "olean_sha256": "283cb0d396cadf6c1aad926d0cecbfbe12615edc8eabe5223082f4686a370323",
+      "compiled_at_utc": "2026-10-09T15:00:17.354354+00:00"
+    },
+    {
+      "file": "ChvatalErdos/FreshLaplace.lean",
+      "sha256": "dab9693c18e0742a92cfa6bdf2d12ec286758e669f1bdad4108a00a75ef03718",
+      "olean_sha256": "474f7e257cfcbfa392010bd53f15143e56d57dbbea3fcbfa179b7d31de32772c",
+      "compiled_at_utc": "2026-10-09T14:41:03.400739+00:00"
+    },
+    {
+      "file": "ChvatalErdos/GlobalNeighbours.lean",
+      "sha256": "2eea9f3aff2687b79e45e06d9bc1fa32bf730f1e66bab0100153dee159c84a1e",
+      "olean_sha256": "5d9ee7f9da422027b97d2d55c64ea6c5ddc6e5a982a8205fa1e23dcc9f979fbb",
+      "compiled_at_utc": "2026-10-09T14:51:19.523565+00:00"
+    },
+    {
+      "file": "ChvatalErdos/GraphEmbedding.lean",
+      "sha256": "07113247ba4489bbe7b03d99177e90312655f32f4c0e47a4092e342855399ccd",
+      "olean_sha256": "3f87219c3c227d1fc98959229e918b866f79be17c4c2a1ff3cae95a2a9ef9301",
+      "compiled_at_utc": "2026-10-09T14:43:46.464920+00:00"
+    },
+    {
+      "file": "ChvatalErdos/HalfIndices.lean",
+      "sha256": "fba307392ddf98c6df4eba45f019c7bf1768ace48f9c2e0ab91983a557ca3985",
+      "olean_sha256": "ad49781744c5757dbb73c335cbf9ec94d086d13e5960b4b6fca1cf5f36d16e90",
+      "compiled_at_utc": "2026-10-09T14:41:06.396034+00:00"
+    },
+    {
+      "file": "ChvatalErdos/HalvingMerge.lean",
+      "sha256": "81e11b27d81aaa5fade98be65176b370d8deded25ad2dd799d9d84701d862883",
+      "olean_sha256": "edaaeb3fd16d4cfe42f45f72dd410a544d20cf26874c69e2364e390ef2120f36",
+      "compiled_at_utc": "2026-10-09T14:49:50.872658+00:00"
+    },
+    {
+      "file": "ChvatalErdos/IncidenceForest.lean",
+      "sha256": "284dfa2c3ec61e8c9759fc23e6964a7d87b1991e41fc01b65c64777d16879bde",
+      "olean_sha256": "6f4c37cdcbff4aa7fcf2919b5227ca8d79b85e766b4dcfec671b41948d49bfde",
+      "compiled_at_utc": "2026-10-09T15:00:00.338050+00:00"
+    },
+    {
+      "file": "ChvatalErdos/InducedCore.lean",
+      "sha256": "2ca87e213b5a1d242c4bdf62554430ba21eaa54791a8821070e3c5774080cd18",
+      "olean_sha256": "b190cbbdb16bd03398a811c9e0dfbbc167f12460f26df6accd8747c32fb0756a",
+      "compiled_at_utc": "2026-10-09T14:46:18.962375+00:00"
+    },
+    {
+      "file": "ChvatalErdos/InducedCutMatching.lean",
+      "sha256": "deae5a165f3f47e9faa1dba4e180a3af392a62840f5405bae735238841f4a028",
+      "olean_sha256": "3420161cb5b90b7276e7b6288b68d01c1add97c7bbbe36cee92a8ae9c3faf3cd",
+      "compiled_at_utc": "2026-10-09T14:41:11.014403+00:00"
+    },
+    {
+      "file": "ChvatalErdos/InitialForest.lean",
+      "sha256": "6a0a86ada3c76de3b01353430e9d40877ab50efe9ca11872abc324c1b37c9ea0",
+      "olean_sha256": "ce36d13faa7b942b0612bfbcc36b52e45b97103371d3121465c013ad4a7d53eb",
+      "compiled_at_utc": "2026-10-09T14:47:41.714241+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LargeSide.lean",
+      "sha256": "41b8ade306f4ec5c86bfb56e2fff8e3a3449ba661c7d0384b8dfda6b4e7f7b8b",
+      "olean_sha256": "e8e5cd201818f5a7f442da836da9a9b2154f364bf89e65549f744a901f824f63",
+      "compiled_at_utc": "2026-10-09T14:51:16.093276+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LayerClosing.lean",
+      "sha256": "b2ac04145031092654ed3283361c58d85e864fb79e5d29b3d58178c6a99787c6",
+      "olean_sha256": "babe32bfcba4def0eda31a6f5fe78d27f5a6d4dd6b3074a09e3cc75011c2c94b",
+      "compiled_at_utc": "2026-10-09T14:50:28.433204+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LayerCycle.lean",
+      "sha256": "0aa5ae42504f5b5113a8f7784b6fd75a7e540e469282a6a08c06f0264963ff7e",
+      "olean_sha256": "560243f6773e0e659d6490b531f07a9a69853f587e01278d269fdc419838dede",
+      "compiled_at_utc": "2026-10-09T14:51:55.558210+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LayerIteration.lean",
+      "sha256": "0f95a644a2369f9bf9d410abedc8fab0b6906307a8423da777ad2bf1e95feeaa",
+      "olean_sha256": "2c9ee2e07103a50c989e2e4df9ef2d8828b6185a4b8fd3cc752f8f81c1d6002f",
+      "compiled_at_utc": "2026-10-09T14:51:33.397137+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LayerMerge.lean",
+      "sha256": "c54a5f69aa0e5ed3feb59e8aecafacab245bdafaffef12f8e45923d6e53b478b",
+      "olean_sha256": "3994fd50e9271b34ebc2ccbe7021d4b87286313c6d2d1e9d6f3620d5091f2e2c",
+      "compiled_at_utc": "2026-10-09T14:50:46.728394+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LeastBound.lean",
+      "sha256": "ddcf8cf454b0b72fc6efa54c1d592696d30ed809cac91f22213e8b92c99bba11",
+      "olean_sha256": "c0a37974b0b8bd0b3d5c10820e410878f363f90f2f2f5a4360888537a32f9ecc",
+      "compiled_at_utc": "2026-10-09T14:56:16.557343+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LevelBounds.lean",
+      "sha256": "29177dfded6fe891f0079d0844b8369a701f9632655944201dcea70caf2ec88a",
+      "olean_sha256": "20013b6de9ff5a4d4f15a1dde3d9b37b7e5a7d0823fc879101cb260247afc7dc",
+      "compiled_at_utc": "2026-10-09T14:52:29.238350+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LevelChordCycle.lean",
+      "sha256": "912a3448b8a475d97982eb2474c3fa4c1e4911c7e3c96a740ac3284694f08f9b",
+      "olean_sha256": "efa06fb70426b6ad2997e29fa2897b7122a26d5bcca014dff06e0c26d63a22df",
+      "compiled_at_utc": "2026-10-09T14:51:57.966435+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LevelMass.lean",
+      "sha256": "69ae85d59b537851c54f65f6e93719948ba90c34fc09dff620b309874e71be83",
+      "olean_sha256": "6bf846e4ca6113bb3dd97fada6e4557a4c53be176a86f228aebab9842d86530e",
+      "compiled_at_utc": "2026-10-09T14:46:25.785543+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LinearLowerBound.lean",
+      "sha256": "89ff4d98a88fdbc7b68384aa0181f280bca51585e3998eb4a2955589de43c0ce",
+      "olean_sha256": "c8402b3a2ea757968ca902edafdaedb6cc3d494e4b8a9993b598ead4a83c05b5",
+      "compiled_at_utc": "2026-10-09T14:56:51.820826+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LinkageHall.lean",
+      "sha256": "7ad6a1dff23aefe8381e87170245a085cb3a7a468b12ab5188320d878d1a930b",
+      "olean_sha256": "1daabdf17dbd50c03d853ccb9a4e1dec9d93c8f2ca701b7b66377f5ad4598eda",
+      "compiled_at_utc": "2026-10-09T14:41:32.130932+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LinkagePaths.lean",
+      "sha256": "2d0d63554176fb2884af1945fc737a23f64f40d31a6e338253e257bcca34ab97",
+      "olean_sha256": "58bda7e711f65fe99f4701c7813297000d891c0cbb4658d20e083929c295f717",
+      "compiled_at_utc": "2026-10-09T14:43:51.211590+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LogBudgets.lean",
+      "sha256": "d0c186f97f7620f3904d61769f379764dcf89069082a0a22eadfe3584aa1665f",
+      "olean_sha256": "a41c444be108d86bced63d91d405b37a641a830a4d15926ce5ead625fbf510ec",
+      "compiled_at_utc": "2026-10-09T14:46:32.622746+00:00"
+    },
+    {
+      "file": "ChvatalErdos/LongestPath.lean",
+      "sha256": "8a02bb944369bbcb76f7941e95a1836266ff9842928583861f6aaf10990c2e1d",
+      "olean_sha256": "09e3abcefd57c2f9e336b6eda8c8b93da9564ee33eeea25dbdfb1b4cf74c009f",
+      "compiled_at_utc": "2026-10-09T14:44:03.397865+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Main.lean",
+      "sha256": "4e597c6529f4416ee8ed7e45d19720ee8bc1cc0a799ec911afc0159dfa3799d4",
+      "olean_sha256": "f6582fd09ce54119965c069f96af14f17f010c19f661ed48c558a059c11c7304",
+      "compiled_at_utc": "2026-10-09T15:01:10.526647+00:00"
+    },
+    {
+      "file": "ChvatalErdos/MatchingObstruction.lean",
+      "sha256": "4ccff47a116a795461d8d79a292339adfda89ad95ea0ef646ad2f976940601c3",
+      "olean_sha256": "7f5736f194b73075768dfa6fe99518d156b266fdb8a90fa4329c42b59d261751",
+      "compiled_at_utc": "2026-10-09T14:49:54.996281+00:00"
+    },
+    {
+      "file": "ChvatalErdos/MatchingSurvival.lean",
+      "sha256": "039253a389e3ba4b161f10c9f53211c3843fb1c3a9211410166750d37be02df7",
+      "olean_sha256": "f96dfad84493ac69cfda08b4dd2bf331d2a90219b8db242feb74e57ae6388d4c",
+      "compiled_at_utc": "2026-10-09T14:44:19.458967+00:00"
+    },
+    {
+      "file": "ChvatalErdos/NatPeriods.lean",
+      "sha256": "c8707b744662f2268e883209ff9fae5747a4ad41f6374af49ba26b310ef01d9f",
+      "olean_sha256": "34329a451fd6b0157a6ea3b9ea3f662ea6eb64b8e6c64d73bb9c8e7676a94f24",
+      "compiled_at_utc": "2026-10-09T14:37:20.819852+00:00"
+    },
+    {
+      "file": "ChvatalErdos/NegativeAssociation.lean",
+      "sha256": "aa1674c0a5ba9bbbd64778a3e68308cf16f7fe726aa7b7a81dd27d55f373c3df",
+      "olean_sha256": "2c7ed39c73e5c13cd382d0bcb98c32a4766a7633219d250dbb5ca8c86349402f",
+      "compiled_at_utc": "2026-10-09T14:41:41.898987+00:00"
+    },
+    {
+      "file": "ChvatalErdos/NeighbourCounts.lean",
+      "sha256": "d202249acebe8d5d156fd18d3c343fb962b65a7b22e2ee61126a7e7123ae507e",
+      "olean_sha256": "24242bae03cdb7d56e0ac8a1db7bf6fd0f26cf09afc6f435e85e23546ddb2970",
+      "compiled_at_utc": "2026-10-09T14:44:26.796330+00:00"
+    },
+    {
+      "file": "ChvatalErdos/NeighbourObstruction.lean",
+      "sha256": "9870bb944ed21a194c5daae9c4218b5fbbdcffb44c9d7d3d787805aba03f1b53",
+      "olean_sha256": "b00186d958f49253d5a55c5184ec1249d1b824a198862ed8751b4e83b52c86dd",
+      "compiled_at_utc": "2026-10-09T14:50:51.711929+00:00"
+    },
+    {
+      "file": "ChvatalErdos/NormalRecords.lean",
+      "sha256": "4ca155b0680c807b383811fca4ad8e565bd2a4573d5a65a5acc1623b3801f200",
+      "olean_sha256": "4c0dee1b82ffacbdb2b1c17fecbd222d712dbf8668a89011a5d7a9ab97cfca70",
+      "compiled_at_utc": "2026-10-09T14:49:52.037781+00:00"
+    },
+    {
+      "file": "ChvatalErdos/NormalStopBound.lean",
+      "sha256": "d5177fd9e69be219c0cc2c40a1eeeb937688b1d0c74722ae7accbcd4dae1cad2",
+      "olean_sha256": "0df63d893118703f96176c12737cedd2582874e5ec7edea8ace272b060163dd0",
+      "compiled_at_utc": "2026-10-09T14:52:03.590709+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ObstructionEstimates.lean",
+      "sha256": "5465032bd16da2eec9f8db89bbbc52599caad54b824a47315b35f7f2ac5fdc83",
+      "olean_sha256": "2d608d4143c42bb3b7762e082508785dd182c881b4a015bea2624ba1b154fb6d",
+      "compiled_at_utc": "2026-10-09T14:59:14.010354+00:00"
+    },
+    {
+      "file": "ChvatalErdos/OneChordPaths.lean",
+      "sha256": "c5d4a760be78dd3c517b0ab894e4e4b6209d43b5e8f15d9866b735f7f7ab6086",
+      "olean_sha256": "41e5ed7d8d694a6c23781cd66691b894def763fd9cc4cc4c098e77872164b6cd",
+      "compiled_at_utc": "2026-10-09T14:49:03.612942+00:00"
+    },
+    {
+      "file": "ChvatalErdos/OrbitSegments.lean",
+      "sha256": "e59b2f8d8ebf2ff9e2b00eac1f464f625e7b7b4c1c04d376ebe3d64e68a9eb23",
+      "olean_sha256": "c2c92696d0a3175ddc05586e964aa51279798e2b446e003fcd807ec0e48c6f25",
+      "compiled_at_utc": "2026-10-09T14:37:33.174703+00:00"
+    },
+    {
+      "file": "ChvatalErdos/OrderedIncidence.lean",
+      "sha256": "389e4266a22c3163d58bae63f2910c09ba41e1d19b98685b44d5d772176c5580",
+      "olean_sha256": "9f685a5df03631c02865060eb929c4299234cc9c1c41ff8e253ee7c3f13f1ada",
+      "compiled_at_utc": "2026-10-09T14:59:44.394047+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PackingCoordinates.lean",
+      "sha256": "cf0a273c7dd96d854d11ee89cf47c5be254f6dc371170900ea2e790da700ecdb",
+      "olean_sha256": "55e896c6e5b78adf3cdd62b5fc153fe5bb747e4c1bbe819d2b49e9f73d156503",
+      "compiled_at_utc": "2026-10-09T14:50:47.341564+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PackingCore.lean",
+      "sha256": "7bb9f15c3d9bc3e91a08fa43b82687f74bc331aa37a64e93b19f00dd0dbcb7ed",
+      "olean_sha256": "e929b4bdf69c0d9c5b505c2c25af3bd726b126e281b1726bc309a13c8f5bc641",
+      "compiled_at_utc": "2026-10-09T14:47:52.699004+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PackingHamiltonian.lean",
+      "sha256": "42038c85c9f45a74064ff782724af25f35d70823229e9fa90e3b4935d0a6dc7e",
+      "olean_sha256": "b603aaf278e7757dce0cd4fa8c88c12f59138984888e8e04beaf126cdde37230",
+      "compiled_at_utc": "2026-10-09T14:53:54.586769+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PancyclicDefinitions.lean",
+      "sha256": "b996603ddfc0bf32b47afa5fe25018021ca478b9c1501eb8190b2c8ba0e2698d",
+      "olean_sha256": "0cd1b6a30c59716eaddb24cd6261aef15dde2064a36c4f84009bad7fe82f2261",
+      "compiled_at_utc": "2026-10-09T15:00:00.809653+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PancyclicObstruction.lean",
+      "sha256": "dac02343aa2e1cb6ded3235d169849e4f73fc35cbe2516b07973fad1bd0704f1",
+      "olean_sha256": "1e1638e9de9c06377380651246316dce95d777a28a0866e5ff9a1435936a9b21",
+      "compiled_at_utc": "2026-10-09T15:00:40.266952+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PathArcSplit.lean",
+      "sha256": "9b754d8e0c6836c954b4a7717699cd29d88efc0bb2cee1e704cc175cc31b1945",
+      "olean_sha256": "7c847d430cd796f8774b43ef0651cba336b8c14425502aa87fd9c7540b8de7f2",
+      "compiled_at_utc": "2026-10-09T14:44:29.095712+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PathBridges.lean",
+      "sha256": "96381e0a752bc040009e64ec7229c9a6020748c994ecd2e5944d58d17aed5417",
+      "olean_sha256": "cea7131df6b3623e379149860ce36c27e07f4a6532dae4916032b91e52ebc93f",
+      "compiled_at_utc": "2026-10-09T14:47:57.783973+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PathExpansion.lean",
+      "sha256": "efc7e5fe91948ff945b78ad53f7fa73cae38f9f96a921b200e42915860c8cee8",
+      "olean_sha256": "e8ab022d000273c2720e0c02a9fb95e0bfd90e9b62001a6efe1cd5a42bc6a9de",
+      "compiled_at_utc": "2026-10-09T14:46:40.162564+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PathInterval.lean",
+      "sha256": "95a4ce3b00366573acf1b62e630d38f8ccfbf907c0501accf3cae8755198d946",
+      "olean_sha256": "55cef39a0267472e73631704fa600ed712db64997b7fa55d0d72b35e7ba51792",
+      "compiled_at_utc": "2026-10-09T14:46:46.199393+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PathPositions.lean",
+      "sha256": "0d4cce092c47824503b29d14c767afdc8aa40ced4474c35ea21e356865efd5fd",
+      "olean_sha256": "3a3454f1137753f376d298d7f1cef40b999a72434df4dad45d0962630d2a2913",
+      "compiled_at_utc": "2026-10-09T14:44:49.094961+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Paths.lean",
+      "sha256": "f6c17b61e910fba5d3b29187254f52581b900740488bad6e00e1b633a46345b0",
+      "olean_sha256": "b7208ebf49e8bd0e6264515c296485af8a8165402b278223650472231f98a14a",
+      "compiled_at_utc": "2026-10-09T14:39:10.731341+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PikhurkoDegree.lean",
+      "sha256": "f2ef2227fa1e77d921990bc073af1b085039ed9eda43d48677420002d7f0fd1c",
+      "olean_sha256": "a8d0c2d9e484b8fe7cf93cf319636da264d101fc2fb74a1eec7f4d3c45965553",
+      "compiled_at_utc": "2026-10-09T14:52:55.207418+00:00"
+    },
+    {
+      "file": "ChvatalErdos/PikhurkoGrowth.lean",
+      "sha256": "79bc4eddfe10a921266dc3a06b3df69c72debcece6e74de31ca613b167ae4ec6",
+      "olean_sha256": "378e55dec5ac40a4e7edc25bfb808e522a7ba7e78be5d448e7d01afa6c4f51ef",
+      "compiled_at_utc": "2026-10-09T14:45:12.143835+00:00"
+    },
+    {
+      "file": "ChvatalErdos/QuantitativeK2.lean",
+      "sha256": "821ebfea42564856a871a030ce5278ab95eacfdded3725ca861e5f2e6a154c6c",
+      "olean_sha256": "06303ed62250d10f7f863ed85762934fc29c1b5967008d62a4adfa2788fb6f09",
+      "compiled_at_utc": "2026-10-09T14:54:31.162546+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RecordAlgorithm.lean",
+      "sha256": "360a126f065fc20f8ed478da861d4de1bba1d8d60673173af061802ce8398307",
+      "olean_sha256": "4ae367c6c075a0644574a2e80ec3758f0336143e0f3d72def04fdd63c133eae3",
+      "compiled_at_utc": "2026-10-09T14:46:52.977388+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RecordInvariants.lean",
+      "sha256": "c374264b7aee6400252676498d65aaa2a59be2b90cf033100a93899542510d1b",
+      "olean_sha256": "8e7b7ab462279e48133e5d29c6f57cbfd6b210e18e809ce040eafa593e379c80",
+      "compiled_at_utc": "2026-10-09T14:48:01.266444+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RecordOverflow.lean",
+      "sha256": "c44f019efe637cba221e9324db9da3507b6cf1ed1998df07fe6ba7241d0dcdb9",
+      "olean_sha256": "ee02ff41e734409968020cf9421ea6c546337176d34eb4dbb0bba68907a05dbc",
+      "compiled_at_utc": "2026-10-09T14:49:09.807097+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RecordProbability.lean",
+      "sha256": "169d3174345faa227f0f9d0d6bac532e9a46b6ed24b9691654981356241470ba",
+      "olean_sha256": "c6ecd6ae581767ae773ffdf0996c7ddcf7de388e7a970cbb8a952f286a8b80ff",
+      "compiled_at_utc": "2026-10-09T14:52:30.809290+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RecordSeparations.lean",
+      "sha256": "e7d1432fd0495c96cae32c4654b4d1fffd2b4fba96bff82d08aac2ce22f37a50",
+      "olean_sha256": "ec7e9978e3182fc72aeba91ecfc1cddfa0b3a42f5b05f4c9adbb0f69f7a934b9",
+      "compiled_at_utc": "2026-10-09T14:49:03.895154+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RecordWords.lean",
+      "sha256": "20dac37cc79bc6a7c960a1d3037cddfcb27e63304f477b5bd8c489dc62d9ac6d",
+      "olean_sha256": "04a1f2c98502ae72d5a5c85dc3fee9c934bc25158489610a58ab1121e9f71514",
+      "compiled_at_utc": "2026-10-09T14:50:08.433400+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Remainder.lean",
+      "sha256": "fbd1611c7d0ebff5f79633183872207185b77bd1104d19d000107fea0ff58354",
+      "olean_sha256": "6ecd481cd29a40e593035a238f4fe2e221fd936c84e97cd3e01c56640ff19acb",
+      "compiled_at_utc": "2026-10-09T14:41:49.013542+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RemainderLogBound.lean",
+      "sha256": "c52067c6a8be397569df7c299baff4f27069f40961dd25e38acc05addf92b2ca",
+      "olean_sha256": "bbf418d03fb3db92d36aed39ecc13ca0739cd35f9449785e89e117de9eedd44d",
+      "compiled_at_utc": "2026-10-09T14:48:22.256674+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ResidueSplit.lean",
+      "sha256": "e967e3c20d7be15bacaef75ddff16d13fbe9015c372a34bb455c0a33e70dc8c2",
+      "olean_sha256": "acbf101a032af5c2c6f7a3399209733354285bff43174114f10ab780ef588560",
+      "compiled_at_utc": "2026-10-09T14:44:58.191560+00:00"
+    },
+    {
+      "file": "ChvatalErdos/RootedParent.lean",
+      "sha256": "2336a33346f7e66eee94a4ef5be7614362e9580012ad6b03f54cc0aaf0a2eb7e",
+      "olean_sha256": "e4f14ba40dbf02b884d74369a8331ed3ca59f5bea26c6561d45ef9438049695c",
+      "compiled_at_utc": "2026-10-09T14:41:57.127827+00:00"
+    },
+    {
+      "file": "ChvatalErdos/SelectedHamiltonian.lean",
+      "sha256": "e2699b03d618b9ca0c6c1b730cf346f6bdf570f9936a5ee8c6e0b971f96993e8",
+      "olean_sha256": "1e4ee8a0a01c3d0389c1863dc176b59e73020eadcbfa1ab61c789fe3a91b4000",
+      "compiled_at_utc": "2026-10-09T14:52:49.800241+00:00"
+    },
+    {
+      "file": "ChvatalErdos/SelectedLayers.lean",
+      "sha256": "f7ddbfada4444895e745039876b72a2a84227f73f779bdc8518c3eddb6a9fdde",
+      "olean_sha256": "bdbcab150c1aa8bf59105b2ebf9a95bbe9c97e33c9dc034c6add450900886c92",
+      "compiled_at_utc": "2026-10-09T14:52:26.362580+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Selection.lean",
+      "sha256": "a50d4798c3b13c2f2f0aadaf4c441b0af0d8940918e1b0feac9ba09d9b2776d9",
+      "olean_sha256": "6f75edf480d0312d5c3b1a49368f0e219f8117ef3e91b744fe4d941a988465b0",
+      "compiled_at_utc": "2026-10-09T14:52:56.177854+00:00"
+    },
+    {
+      "file": "ChvatalErdos/ShortChord.lean",
+      "sha256": "2a894ab27d38ea2ef65ff1b3f37f71774eafe540d688a08430988b0cb2264ed1",
+      "olean_sha256": "20112eb4ff718ff5db39dd11406a10f4331fbd331dbf530660fa2116a6aebcc8",
+      "compiled_at_utc": "2026-10-09T14:50:09.537062+00:00"
+    },
+    {
+      "file": "ChvatalErdos/SmallSide.lean",
+      "sha256": "0144e460409133ff9979bc39a4c3a9ebcdfae521e0173004a2fdbe75f20de067",
+      "olean_sha256": "2c517aa48719547fb151a04ca9a73bc188a0c8fb465eb90f11531a4240183f3f",
+      "compiled_at_utc": "2026-10-09T14:51:36.763443+00:00"
+    },
+    {
+      "file": "ChvatalErdos/StoppedNeighbours.lean",
+      "sha256": "84afe587bd53d07d734db804481069eb7e30bb12f0aa96a40d014eb5edc93753",
+      "olean_sha256": "80a291eefec2483856d742d8b5c8d6ceea1aabf8b7f94b151785a37dd40fc28d",
+      "compiled_at_utc": "2026-10-09T14:47:00.512646+00:00"
+    },
+    {
+      "file": "ChvatalErdos/Targets.lean",
+      "sha256": "4cd7ebea3d610a4443705077054d3b21c14aac7dc96c6e02cb62a223cc2bdae8",
+      "olean_sha256": "ce380a4753ce0b958b80d87722ee47e848642ab9d05d0316a27c3cce3d3e9f10",
+      "compiled_at_utc": "2026-10-09T14:45:16.953150+00:00"
+    },
+    {
+      "file": "ChvatalErdos/TwoPathsCycle.lean",
+      "sha256": "f43d0ecf296298991f7ff6054b264ee9dd588a863b8dd04ce92145a1ade0893b",
+      "olean_sha256": "5f64acb0bcbce1f2cc72545a38b0426556733b27373d25c03495c801848cf2ba",
+      "compiled_at_utc": "2026-10-09T14:48:14.077734+00:00"
+    },
+    {
+      "file": "ChvatalErdos/WeightedFailure.lean",
+      "sha256": "2d9956f5459be7931665338edb93ca7b3d1b06e5a6aa0af78b1b4a77e914c9ef",
+      "olean_sha256": "7c39df8be26b54de70e193416fc6e169705098072e420c913a27d8d06dca06e2",
+      "compiled_at_utc": "2026-10-09T14:42:16.591508+00:00"
+    }
+  ],
+  "publication_redaction": "Personal absolute paths removed; proof/artifact hashes and verification timestamps preserved."
+}
