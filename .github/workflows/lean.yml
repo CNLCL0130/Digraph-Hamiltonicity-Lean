@@ -1,0 +1,51 @@
+name: Lean verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out the formalization
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check packaged file integrity
+        run: |
+          sha256sum -c SHA256SUMS
+          python scripts/verify.py --source-only
+
+      - name: Set up the pinned Lean toolchain and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: false
+          test: false
+          use-github-cache: false
+          use-mathlib-cache: true
+
+      - name: Build all proof modules and audit the main theorems
+        run: python scripts/verify.py
+
+      - name: Save the verification log and status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-verification
+          path: .verification/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 90
